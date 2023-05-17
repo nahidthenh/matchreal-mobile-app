@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya + Sans + SC:wght@400;500;800');
+
+$-ff-body: 'Alegreya', sans-serif;
+$-ff-p: 'Montserrat', sans-serif;
+$-ff-heading: 'Outfit', sans-serif;
+
+$-common-black: #000;
+$-common-white: #ffffff;
+$-grey-1: #f5f8fb;
+$-heading-primary: #000;
+$-text-body: #888888;
+$-grey-2: #e2ebf4;
+$-theme-primary: #ededed;
+$-text-1: #000;
+$-border-2: #b7c3cf;
+$-border-1: #888888;
+$-fw-normal: normal;
+
+$-fw-elight: 200;
+$-fw-regular: 400;
+$-fw-light: 300;
+$-fw-sbold: 600;
+$-fw-medium: 500;
+$-fw-ebold: 800;
+$-fw-bold: 700;
+$-fw-black: 900;
+
+$-fs-body: 14px;
+$-fs-p: 14px;
+$-fs-h1: 40px;
+$-fs-h2: 36px;
+$-fs-h3: 24px;
+$-fs-h4: 20px;
+$-fs-h5: 16px;
+$-fs-h6: 14px;
+$-bg-red:red;
+p{
+    font-weight: $-fw-black;
+    font-family: $-ff-body;
+}
+
+h1{
+    background-color: $-bg-red;
+}
