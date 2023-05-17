@@ -4,11 +4,13 @@ $-ff-body: 'Inter', sans-serif;
 $-ff-specialTitle: 'Dancing Script', cursive;
 // Color 
 $ColorBlack: #000;
+$ColorTitle:#010101;
 $ColorWhite: #fff;
 $ColorWhite2:#f3f3f3;
 $ColorPrimary: red;
+$ColorBody:#969598;
 $ColorPink:#EC4899;
-$SkyBlue:#2EA4FC;
+$ColorSkyblue:#2EA4FC;
 // Font Width 
 $fw-light: 300;
 $fw-regular: 400;
@@ -19,12 +21,17 @@ $fw-ebold: 800;
 $fw-black: 900;
 // Font Size 
 $fs-p: 14px;
+$fs-48: 48px;
 $fs-h1: 40px;
 $fs-h2: 36px;
 $fs-h3: 24px;
 $fs-h4: 20px;
 $fs-h5: 16px;
 $fs-h6: 14px;
+
+// box shadow 
+
+$shadow-1: 0 3px 51px rgb(46,164,252 ,52%);
 
 *{
     margin: 0;
@@ -34,16 +41,27 @@ $fs-h6: 14px;
 
 p{
     margin: 0;
+    color: $ColorBody;
     padding: 0;
+    font-size: $fs-h5;
 }
+
 h1,h2,h3,h4,h5,h6{
      margin: 0;
-    padding: 0;
+     padding: 0;
+     color: $ColorTitle;
 }
+
 body{
     font-family: $-ff-body !important;
 }
 
+a{
+    color: $ColorSkyblue !important;
+    text-decoration: none !important;
+}
+
+// Preloadder 
 
 #preloader {
   position: fixed;
@@ -63,7 +81,7 @@ body{
   height: 60px;
   border-radius: 50%;
   border: 5px solid $ColorWhite2;
-  border-top: 5px solid $SkyBlue;
+  border-top: 5px solid $ColorSkyblue;
   animation: spin 1s linear infinite;
 }
 
@@ -84,7 +102,7 @@ body{
         padding: 50px 0;
     }
     .theme-btn {
-        background: $SkyBlue;
+        background: $ColorSkyblue;
         color: $ColorWhite;
         border: 0;
         display: block;
@@ -96,4 +114,47 @@ body{
         text-decoration: none ;
         text-align: center;
     }
+    .bg-pink{
+        background-color: $ColorPink;
+    }
 }
+
+
+// Auth Login page 
+input:focus{
+    box-shadow: none !important;
+}
+.auth-wrap{
+    .auth-title{
+        font-size: $fs-48;
+    }
+    .auth-input{
+        background-color: #fff;
+        border: 0;
+        padding: 20px 50px;
+        border-radius: 100px;
+        width: 100%;
+        box-shadow: 0px 0px 76px rgba(0, 0, 0, 0.07);
+    }
+    .auth-form img {
+	    top: 19px;
+	    position: absolute;
+	    left: 25px;
+    }
+
+    .auth-btn {
+        background: $ColorSkyblue;
+        color: $ColorWhite;
+        border: 0;
+        width: 60%;
+        padding: 15px;
+        border-radius: 100px;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: $shadow-1;
+    }
+    label { 
+        color: $ColorBody;
+    }
+}
+
