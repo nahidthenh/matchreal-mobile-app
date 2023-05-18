@@ -11,6 +11,7 @@
     <!-- ==== css ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/tinderSlider.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
@@ -43,39 +44,39 @@
         <div class="row">
             <div class="col-12">
                 <!-- Main Content Start  -->
-                <div class="main-content">
-                    <h1>Todays Match</h1>
+                <div class="main-content mt-3">
+                    <!-- Main Slider  -->
+                    <div class="tinder">
+                        <div class="tinder--status">
+                            <i class="fa fa-remove"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
 
-                    <div>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut reprehenderit eaque labore
-                            perferendis qui veniam nulla, debitis dolor neque quo! Delectus necessitatibus neque ad ab,
-                            tempore quis explicabo ipsum reprehenderit dolorem fugit vero maiores sequi quas at dolor
-                            culpa rerum autem quisquam aliquid. Sapiente, dolore? Nam quibusdam quo ipsa similique
-                            impedit dignissimos eveniet ea ducimus incidunt sunt voluptatum repellat debitis, ex quaerat
-                            expedita accusamus velit atque quam eaque at deserunt quae nesciunt? Culpa modi nulla cumque
-                            aliquam harum vitae, eos tempora nihil quidem libero iure dolor totam? Quasi expedita quos
-                            velit earum aliquid accusamus numquam officiis? Ipsum molestiae perspiciatis repellendus
-                            recusandae consequuntur numquam ut, deleniti quo ipsam tempora voluptate dignissimos quasi
-                            error porro. Hic consequatur iusto explicabo aspernatur provident tempora atque, voluptatum
-                            voluptate praesentium quas labore aperiam, exercitationem illo quae tempore odio quo officia
-                            itaque quisquam recusandae totam? Reprehenderit dignissimos alias blanditiis quibusdam,
-                            quaerat fuga omnis, tenetur laborum doloremque in odio possimus expedita quisquam error
-                            provident perferendis soluta nemo debitis minima, incidunt sint consectetur? Alias similique
-                            facilis ex provident, soluta quasi eaque tenetur nulla praesentium accusantium quisquam
-                            repellat debitis mollitia fugiat at quaerat, commodi libero dolor aspernatur ipsum
-                            repellendus aliquid officiis. Voluptates ad dolorem itaque, temporibus repudiandae labore
-                            ducimus vero deserunt facilis placeat sint aspernatur, totam praesentium quam iusto
-                            dignissimos, tenetur voluptas sapiente molestiae libero et! Culpa voluptatem ad deleniti
-                            quaerat voluptate ipsum voluptatum iusto ipsa corrupti id impedit ipsam vero eos laboriosam,
-                            doloremque temporibus aspernatur commodi reprehenderit dicta earum libero incidunt. Velit
-                            dolore quo reiciendis eligendi id distinctio minima iure. Ut dolore aliquam, totam fugiat
-                            saepe suscipit eum provident iste, perspiciatis dolor asperiores iure culpa sunt iusto magni
-                            alias nobis quas, blanditiis consequatur assumenda tempore. Quisquam officia modi voluptatum
-                            saepe neque, voluptas vel, facilis praesentium tempore, laudantium dignissimos inventore
-                            eligendi ratione molestias rem impedit! Expedita perferendis excepturi eaque illum.
-                        </p>
+                        <div class="tinder--cards">
+                            <!-- For Background  -->
+                            <div class="tinder--card">
+                                <div class="slider-card-image position-relative"
+                                    style="background-image: url('assets/images/user/1.png');">
+                                    <span class="slider-card-location">
+                                        <i class="ri-map-pin-2-line"></i> Orlando, USA
+                                    </span>
+                                    <span class="spotlight">Spotlight</span>
+
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between w-100">
+                                        <div>
+                                            <a class="card-url" href="user-profile.html">
+                                                <h3 id="card-name">Ayesha Aermin</h3>
+                                            </a>
+                                            <p id="married-status">Never Married</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Main Slider End -->
                 </div>
                 <!-- Footer Menu Start  -->
                 <div class="footer-bg">
@@ -114,7 +115,10 @@
     </div>
 
     <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/hammer.min.js"></script>
+    <script src="assets/js/tinderSlider.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
