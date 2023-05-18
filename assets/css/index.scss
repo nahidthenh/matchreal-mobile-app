@@ -326,11 +326,21 @@ input[type="radio"]:checked+.label.woman {
 
 
 // Main Slider / Tinder Slider Customization 
-
-
+.card-bg-1{
+    background-image: linear-gradient(to bottom right, #67D6F0,#549DF0);
+}
+.card-bg-2{
+    background-image: linear-gradient(to bottom right, #50A4FE,#EC4899);
+}
+.card-bg-3{
+    background-image: linear-gradient(to bottom right, #5CD6E9,#6713FA);
+}
+.card-bg-4{
+    background-image: linear-gradient(to bottom right, #FEED50,#48ECDC);
+}
 .tinder {
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    height: 700px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -375,29 +385,24 @@ input[type="radio"]:checked+.label.woman {
 
 .tinder--cards {
     flex-grow: 1;
-    padding-top: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    z-index: 1;
+    align-items: flex-start;
+    // z-index: 1;
 }
 
 .tinder--card {
-    display: inline-block;
-    width: 90vw;
-    max-width: 400px;
-    height: 70vh;
-    background: #FFFFFF;
-    padding-bottom: 40px;
-    border-radius: 8px;
-    overflow: hidden;
-    position: absolute;
-    will-change: transform;
-    transition: all 0.3s ease-in-out;
-    cursor: -webkit-grab;
-    cursor: -moz-grab;
-    cursor: grab;
+	display: inline-block;
+	width: 100%;
+	max-width: 400px;
+	overflow: hidden;
+	position: absolute;
+	will-change: transform;
+	transition: all 0.3s ease-in-out;
+	cursor: grab;
+	border-radius: 40px;
+	padding: 10px;
 }
 
 .moving.tinder--card {
@@ -412,20 +417,21 @@ input[type="radio"]:checked+.label.woman {
     pointer-events: none;
 }
 
-.tinder--card h3 {
-    margin-top: 32px;
-    font-size: 32px;
-    padding: 0 16px;
-    pointer-events: none;
+.tinder--user-info{ 
+    pointer-events: inherit;
+    padding: 20px 0;
+    h3 {
+        font-size: $fs-h3;    
+        font-weight: $fw-bold;
+        color: $ColorWhite;
+        pointer-events: inherit !important;
+    }
+    p {
+	    font-size: $fs-h5;
+        color: $ColorWhite;
+	    pointer-events: none;
+    }
 }
-
-.tinder--card p {
-    margin-top: 24px;
-    font-size: 20px;
-    padding: 0 16px;
-    pointer-events: none;
-}
-
 .tinder--buttons {
     flex: 0 0 100px;
     text-align: center;
@@ -457,4 +463,12 @@ input[type="radio"]:checked+.label.woman {
 
 .fa-remove {
     color: #CDD6DD;
+}
+
+.tinder--user-dp {
+	background-size: cover;
+	background-position: top;
+	height: 500px;
+	border-radius: 40px;
+    pointer-events: none;
 }
