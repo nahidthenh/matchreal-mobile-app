@@ -281,25 +281,45 @@ input[type="radio"]:checked+.label.woman {
 
 // Footer CSS 
 
-.footer-wrap{
-     background-image: linear-gradient(to right, $ColorMenu1 ,$ColorMenu2);
+.footer-bg {
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    background-color: $ColorWhite;
+
+    .footer-wrap{    
+        width: 93%;
+        background-image: linear-gradient(to right, $ColorMenu1 ,$ColorMenu2);
      
-     a i {
-        font-size: 20px;
-        color: $ColorWhite;
-    }
-    .menu-item{
-        background: transparent;
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        line-height: 50px;
-        border-radius: 100px;
-    }
-    .menu-item.active{
-        background-color: $ColorWhite !important;
-        i{
-            color: $ColorSkyblue;
+        a i {
+            font-size: 20px;
+            color: $ColorWhite;
+        }
+        .menu-item{
+            background: transparent;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 100px;
+        }
+        .menu-item.active{
+            background-color: $ColorWhite !important;
+            i{
+                color: $ColorSkyblue;
+            }
         }
     }
+}
+
+// Base 
+
+.main-content{
+    margin-bottom: 120px;
 }

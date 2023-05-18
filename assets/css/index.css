@@ -215,14 +215,27 @@ input:focus {
   font-size: 30px;
 }
 
-.footer-wrap {
+.footer-bg {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.footer-bg .footer-wrap {
+  width: 93%;
   background-image: linear-gradient(to right, #EC018B, #FC6667);
 }
-.footer-wrap a i {
+.footer-bg .footer-wrap a i {
   font-size: 20px;
   color: #fff;
 }
-.footer-wrap .menu-item {
+.footer-bg .footer-wrap .menu-item {
   background: transparent;
   height: 50px;
   width: 50px;
@@ -230,9 +243,13 @@ input:focus {
   line-height: 50px;
   border-radius: 100px;
 }
-.footer-wrap .menu-item.active {
+.footer-bg .footer-wrap .menu-item.active {
   background-color: #fff !important;
 }
-.footer-wrap .menu-item.active i {
+.footer-bg .footer-wrap .menu-item.active i {
   color: #2EA4FC;
+}
+
+.main-content {
+  margin-bottom: 120px;
 }/*# sourceMappingURL=index.css.map */
