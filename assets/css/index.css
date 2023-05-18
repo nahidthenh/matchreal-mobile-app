@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+.shadow-2 {
+  box-shadow: 0 0 76px rgba(0, 0, 0, 0.07);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +90,11 @@ input:focus {
   box-shadow: none !important;
 }
 
+.auth-wrap {
+  /* Select me  */
+  /* Im man woman  */
+  /* Select me end  */
+}
 .auth-wrap .auth-title {
   font-size: 48px;
 }
@@ -115,4 +124,115 @@ input:focus {
 }
 .auth-wrap label {
   color: #969598;
+}
+.auth-wrap .heading {
+  text-align: center;
+  font-size: 0.8em;
+}
+.auth-wrap .center-align {
+  display: flex;
+  justify-content: start;
+  margin-left: -3px;
+  margin-top: 10px;
+}
+.auth-wrap .center-align input[type=radio] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+.auth-wrap .label {
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(233, 9, 249, 0.3);
+  color: #fff;
+  transition: all 0.3s ease-out;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 0;
+}
+.auth-wrap .label.man {
+  font-size: 14px;
+  background-color: #fff !important;
+  border: 4px solid #fff;
+  padding: 10px;
+  background: #E1E6FF !important;
+  border-radius: 80px;
+  color: #17265C;
+}
+.auth-wrap input[type=radio]:checked + .label.man {
+  border: 4px solid #2EA4FC;
+  border-radius: 80px;
+  padding: 10px;
+  background: #E1E6FF !important;
+  color: #17265C;
+  font-size: 14px;
+}
+.auth-wrap .label.woman {
+  background-color: #fff !important;
+  border: 4px solid #fff;
+  background: #FFE1F8 !important;
+  border-radius: 80px;
+  padding: 10px;
+  color: #17265C;
+  font-size: 14px;
+}
+.auth-wrap input[type=radio]:checked + .label.woman {
+  font-size: 14px;
+  border: 4px solid #EC4899;
+  border-radius: 80px;
+  background: #FFE1F8 !important;
+  border-radius: 80px;
+  padding: 10px;
+}
+.auth-wrap .auth-input input:focus {
+  box-shadow: none;
+}
+.auth-wrap .label img {
+  position: relative;
+  margin: 5px 0;
+}
+.auth-wrap .blueBg {
+  position: relative;
+  display: block;
+}
+.auth-wrap .blueBg img {
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.auth-wrap .im-title {
+  margin: 0 0 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #010101;
+  margin-right: 20px;
+}
+
+.header-wrap a i {
+  color: #A8AEBA;
+  font-size: 30px;
+}
+
+.footer-wrap {
+  background-image: linear-gradient(to right, #EC018B, #FC6667);
+}
+.footer-wrap a i {
+  font-size: 20px;
+  color: #fff;
+}
+.footer-wrap .menu-item {
+  background: transparent;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 100px;
+}
+.footer-wrap .menu-item.active {
+  background-color: #fff !important;
+}
+.footer-wrap .menu-item.active i {
+  color: #2EA4FC;
 }/*# sourceMappingURL=index.css.map */
