@@ -11,7 +11,7 @@
     <!-- ==== css ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/tinderSlider.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
@@ -48,171 +48,170 @@
 
                 <!-- Main Content Start  -->
                 <div class="main-content mt-3">
-                    <!-- Main Slider  -->
-                    <div class="tinder">
-                        <div class="tinder--status">
-                            <i class="fa fa-remove"></i>
-                            <i class="fa fa-heart"></i>
+                    <div class="activity-slider">
+                        <div class="activity-slider-wrap">
+                            <div class="tinder--cards">
+                                <div class="tinder--card card-bg-1">
+                                    <div class="tinder--user-dp user-dp-v2"
+                                        style="background-image: url('assets/images/user/2.png');">
+                                    </div>
+                                    <div class="tinder--user-info">
+                                        <a href="user-profile.html">
+                                            <h3>Natasha Abigall</h3>
+                                        </a>
+                                        <p>Cape Town</p>
+                                    </div>
+                                    <div
+                                        class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
+                                        <button>
+                                            <img src="assets/images/icon/gift.svg" alt="">
+                                        </button>
+                                        <a href="message-view.html">
+                                            <img src="assets/images/icon/message.svg" alt="">
+                                        </a>
+                                        <button>
+                                            <img src="assets/images/icon/dollor.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="tinder--cards">
-                            <div class="tinder--card card-bg-1">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/2.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="tinder--card card-bg-2">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/3.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
+                        <div class="activity-slider-wrap">
+                            <div class="tinder--cards">
+                                <div class="tinder--card card-bg-1">
+                                    <div class="tinder--user-dp user-dp-v2"
+                                        style="background-image: url('assets/images/user/1.png');">
+                                    </div>
+                                    <div class="tinder--user-info">
+                                        <a href="user-profile.html">
+                                            <h3>Afrin Hafza</h3>
+                                        </a>
+                                        <p>Cape Town</p>
+                                    </div>
+                                    <div
+                                        class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
+                                        <button>
+                                            <img src="assets/images/icon/gift.svg" alt="">
+                                        </button>
+                                        <a href="message-view.html">
+                                            <img src="assets/images/icon/message.svg" alt="">
+                                        </a>
+                                        <button>
+                                            <img src="assets/images/icon/dollor.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tinder--card card-bg-3">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/4.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="tinder--card card-bg-4">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/5.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <a href="user-profile.html">
-                                        <h3>Abigall</h3>
-                                    </a>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="tinder--card card-bg-4">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/1.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <a href="user-profile.html">
-                                        <h3>Abigall</h3>
-                                    </a>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="tinder--buttons">
-                            <button id="nope"><i class="fa fa-remove"></i></button>
-                            <button id="love"><i class="fa fa-heart"></i></button>
+                        <div class="activity-slider-wrap">
+                            <div class="tinder--cards">
+                                <div class="tinder--card card-bg-1">
+                                    <div class="tinder--user-dp user-dp-v2"
+                                        style="background-image: url('assets/images/user/3.png');">
+                                    </div>
+                                    <div class="tinder--user-info">
+                                        <a href="user-profile.html">
+                                            <h3>Hasan Mahmud</h3>
+                                        </a>
+                                        <p>Cape Town</p>
+                                    </div>
+                                    <div
+                                        class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
+                                        <button>
+                                            <img src="assets/images/icon/gift.svg" alt="">
+                                        </button>
+                                        <a href="message-view.html">
+                                            <img src="assets/images/icon/message.svg" alt="">
+                                        </a>
+                                        <button>
+                                            <img src="assets/images/icon/dollor.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-slider-wrap">
+                            <div class="tinder--cards">
+                                <div class="tinder--card card-bg-1">
+                                    <div class="tinder--user-dp user-dp-v2"
+                                        style="background-image: url('assets/images/user/4.png');">
+                                    </div>
+                                    <div class="tinder--user-info">
+                                        <a href="user-profile.html">
+                                            <h3>Sakib Khan</h3>
+                                        </a>
+                                        <p>Dhaka</p>
+                                    </div>
+                                    <div
+                                        class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
+                                        <button>
+                                            <img src="assets/images/icon/gift.svg" alt="">
+                                        </button>
+                                        <a href="message-view.html">
+                                            <img src="assets/images/icon/message.svg" alt="">
+                                        </a>
+                                        <button>
+                                            <img src="assets/images/icon/dollor.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Main Slider End -->
-                </div>
-                <!-- Footer Menu Start  -->
-                <div class="footer-bg">
-                    <section class="footer-wrap rounded-pill p-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <a href="todays-match.html">
-                                <div class="menu-item">
-                                    <i class="ri-calendar-todo-line"></i>
-                                </div>
-                            </a>
-                            <a href="my-match.html">
-                                <div class="menu-item">
-                                    <i class="ri-heart-3-line"></i>
-                                </div>
-                            </a>
-                            <a href="activity.html">
-                                <div class="menu-item active">
-                                    <i class="ri-pulse-line"></i>
-                                </div>
-                            </a>
-                            <a href="message.html">
-                                <div class="menu-item">
-                                    <i class="ri-send-plane-line"></i>
-                                </div>
-                            </a>
-                            <a href="profile.html">
-                                <div class="menu-item">
-                                    <i class="ri-user-line"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </section>
+
+                    <!-- Footer Menu Start  -->
+                    <div class="footer-bg">
+                        <section class="footer-wrap rounded-pill p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="todays-match.html">
+                                    <div class="menu-item">
+                                        <i class="ri-calendar-todo-line"></i>
+                                    </div>
+                                </a>
+                                <a href="my-match.html">
+                                    <div class="menu-item">
+                                        <i class="ri-heart-3-line"></i>
+                                    </div>
+                                </a>
+                                <a href="activity.html">
+                                    <div class="menu-item active">
+                                        <i class="ri-pulse-line"></i>
+                                    </div>
+                                </a>
+                                <a href="message.html">
+                                    <div class="menu-item">
+                                        <i class="ri-send-plane-line"></i>
+                                    </div>
+                                </a>
+                                <a href="profile.html">
+                                    <div class="menu-item">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- ==== Script File ==== -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/hammer.min.js"></script>
-    <script src="assets/js/tinderSlider.js"></script>
-    <script src="assets/js/app.js"></script>
+        <!-- ==== Script File ==== -->
+        <script src="assets/js/jquery-3.6.4.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.activity-slider').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
+        </script>
 </body>
 
 </html>

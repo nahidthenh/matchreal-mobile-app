@@ -459,4 +459,14 @@ input:focus {
 #back-button {
   background: none;
   border: 0;
+}
+
+.activity-slider-wrap {
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
 }/*# sourceMappingURL=index.css.map */

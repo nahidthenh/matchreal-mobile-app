@@ -533,3 +533,14 @@ input[type="radio"]:checked+.label.woman {
     background: none;
     border: 0;    
 }
+
+// Activity page 
+.activity-slider-wrap{
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
