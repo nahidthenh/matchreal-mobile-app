@@ -218,6 +218,19 @@ input:focus {
   color: #A8AEBA;
   font-size: 30px;
 }
+.header-wrap .notification-item {
+  position: relative;
+}
+.header-wrap .notification-item:after {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #2EA4FC;
+  content: "";
+  right: 5px;
+  border-radius: 50px;
+  top: -10px;
+}
 
 .footer-bg {
   height: 100px;
