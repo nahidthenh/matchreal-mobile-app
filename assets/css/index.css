@@ -454,4 +454,9 @@ input:focus {
 }
 .beeSeenHere-slider-inner-item p {
   color: #fff;
+}
+
+#back-button {
+  background: none;
+  border: 0;
 }/*# sourceMappingURL=index.css.map */
