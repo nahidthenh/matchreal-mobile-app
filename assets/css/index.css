@@ -350,19 +350,17 @@ input:focus {
 }
 
 .tinder--user-info {
-  pointer-events: inherit;
+  pointer-events: none;
   padding: 20px 0;
 }
 .tinder--user-info h3 {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  pointer-events: inherit !important;
 }
 .tinder--user-info p {
   font-size: 16px;
   color: #fff;
-  pointer-events: none;
 }
 
 .tinder--buttons {
@@ -425,6 +423,7 @@ input:focus {
 }
 
 .tinder-user-interaction {
+  pointer-events: none;
   padding-bottom: 30px;
 }
 .tinder-user-interaction button {
@@ -469,4 +468,24 @@ input:focus {
   position: relative;
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
+}
+
+.activity-menu-wrap {
+  background-image: linear-gradient(to right, #EC018B, #FC6667);
+  padding: 20px 0;
+  text-align: center;
+}
+.activity-menu-wrap ul {
+  margin: 0 !important;
+}
+.activity-menu-wrap .activity-menu {
+  background: none;
+  border: 0;
+  margin: 0 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.activity-menu-wrap .activity-menu.active {
+  border-bottom: 3px solid #fff;
 }/*# sourceMappingURL=index.css.map */

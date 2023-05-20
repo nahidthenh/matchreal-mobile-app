@@ -422,18 +422,16 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .tinder--user-info{ 
-    pointer-events: inherit;
+    pointer-events: none;
     padding: 20px 0;
     h3 {
         font-size: $fs-h3;    
         font-weight: $fw-bold;
         color: $ColorWhite;
-        pointer-events: inherit !important;
     }
     p {
 	    font-size: $fs-h5;
         color: $ColorWhite;
-	    pointer-events: none;
     }
 }
 .tinder--buttons {
@@ -499,6 +497,7 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .tinder-user-interaction {
+    pointer-events: none;
     padding-bottom: 30px;
     button{
         background: none;
@@ -543,4 +542,23 @@ input[type="radio"]:checked+.label.woman {
     position: relative;
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
+}
+.activity-menu-wrap{
+	background-image: linear-gradient(to right,$ColorMenu1,$ColorMenu2);
+	padding: 20px 0;
+    text-align: center;
+    ul{
+        margin: 0 !important;
+    }
+    .activity-menu{
+        background:none;
+        border: 0;
+        margin: 0 5px;
+        color: $ColorWhite;
+        font-weight: $fw-sbold;
+        font-size: $fs-h6;
+    }
+    .activity-menu.active{
+        border-bottom:3px solid $ColorWhite;
+    }
 }
