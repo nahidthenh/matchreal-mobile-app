@@ -246,6 +246,7 @@ input:focus {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  z-index: 999;
 }
 .footer-bg .footer-wrap {
   width: 93%;
@@ -623,4 +624,45 @@ input:focus {
   top: 0;
   left: 0;
   z-index: 1;
+}
+.dashboard-wrap .dashboard-widget {
+  background: #fff;
+  padding: 20px 0;
+  margin-top: -40px;
+  z-index: 3;
+  position: relative;
+  border-radius: 34px 34px 0 0;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget {
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+  margin-bottom: 10px;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget ul {
+  margin: 0;
+  padding-left: 15px;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget ul li:last-child {
+  margin-bottom: 0px !important;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget ul li a img {
+  margin-right: 15px;
+}
+.dashboard-wrap .dashboard-widget .dashboard-inner-widget ul li a {
+  color: #010101;
+  font-size: 16px;
+  font-weight: 500;
+}
+.dashboard-wrap .dashboard-widget .log-out-btn-wrap button {
+  background: #FF2A2A;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  border-radius: 11px;
+  padding: 13px;
+  margin-top: 10px;
 }/*# sourceMappingURL=index.css.map */

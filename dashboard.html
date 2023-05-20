@@ -28,7 +28,7 @@
             <div class="dashboard-header" style="background-image: url(assets/images/user/4.png);">
                 <a href="edit-profile.html">
                     <div class="edit-profile">
-                        <i class="ri-pen-nib-fill"></i>
+                        <i class="ri-pencil-line"></i>
                     </div>
                 </a>
                 <div class="dashboard-user-info text-center my-4">
@@ -40,14 +40,40 @@
                     </p>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3>Hello Print !</h3>
+            <div class="dashboard-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="dashboard-inner-widget p-3">
+                                <ul>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/heart.svg" alt="">
+                                            Connection</a></li>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/eye.svg" alt="">
+                                            Visitors</a></li>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/social-network.svg" alt="">
+                                            Liked me</a></li>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/star.svg" alt="">
+                                            Favourites</a></li>
+                                </ul>
+                            </div>
+                            <div class="dashboard-inner-widget p-3">
+                                <ul>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/link.svg" alt="">
+                                            Referrals</a></li>
+                                    <li><a href=""><img src="assets/images/icon/dashboard/settings.svg" alt="">
+                                            Settings</a></li>
+                                </ul>
+                            </div>
+                            <div class="log-out-btn-wrap">
+                                <button>logout</button>
+                            </div>
+                        </div>
+                        <!-- Main Slider End -->
                     </div>
-                    <!-- Main Slider End -->
                 </div>
-                <!-- Footer Menu Start  -->
+            </div>
+            <!-- Footer Menu Start  -->
+            <div class="container">
                 <div class="footer-bg">
                     <section class="footer-wrap rounded-pill p-3">
                         <div class="d-flex justify-content-between align-items-center">
@@ -84,17 +110,8 @@
     </div>
 
     <!-- ==== Script File ==== -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <!-- Arrow Back -->
-    <script>
-        const backButton = document.getElementById("back-button");
-
-        backButton.addEventListener("click", function () {
-            history.back();
-        });
-    </script>
 </body>
 
 </html>

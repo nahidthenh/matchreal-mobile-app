@@ -312,6 +312,7 @@ input[type="radio"]:checked+.label.woman {
 	flex-direction: column;
 	align-items: center;
     background-color: $ColorWhite;
+    z-index: 999;
 
     .footer-wrap{    
         width: 93%;
@@ -703,5 +704,48 @@ input[type="radio"]:checked+.label.woman {
         top: 0;
         left: 0;
         z-index: 1;
+    }
+    .dashboard-widget {
+        background: $ColorWhite;
+        padding: 20px 0;
+        margin-top: -40px;
+        z-index: 3;
+        position: relative;
+        border-radius: 34px 34px 0 0;
+        .dashboard-inner-widget{
+            box-shadow:0 3px 17px rgb(0,0,0 ,7%) ;
+            border-radius: 11px;
+            margin-bottom: 10px;
+            ul{
+                margin: 0;
+                padding-left: 15px;
+            }
+            ul li{
+                list-style: none;
+                margin-bottom: 25px;
+            }
+            ul li:last-child{
+                margin-bottom: 0px !important;
+            }
+            ul li a img{
+                margin-right: 15px;
+            }
+            ul li a {
+                color: $ColorTitle;
+                font-size: $fs-h5;
+                font-weight: $fw-medium;
+            }
+        }
+        .log-out-btn-wrap{
+            button{
+                background:#FF2A2A;
+                color: $ColorWhite;
+                width: 100%;
+                border: 0;
+                border-radius: 11px;
+                padding: 13px;
+                margin-top: 10px;
+            }
+        }
     }
 }
