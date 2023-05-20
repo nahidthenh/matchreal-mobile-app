@@ -562,3 +562,66 @@ input[type="radio"]:checked+.label.woman {
         border-bottom:3px solid $ColorWhite;
     }
 }
+
+// Message Page 
+
+.message-wrap{
+    position: relative;
+    input{
+        background-color: $ColorWhite2;
+        width: 100%;
+        border: 0;
+        border-radius: 50px;
+        padding: 16px 40px !important;
+    }
+    input:focus{
+        box-shadow: none;
+        background-color:$ColorWhite2;
+    }
+    i{
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        font-size: $fs-h4;
+        color: $ColorBody;
+    }
+    .message-item-wrap{
+        border-radius: 50px;
+        .single-message-item{
+            margin: 20px 0;
+            h6{
+                color: $ColorTitle;
+                font-weight: $fw-bold;
+            }
+            p{
+                margin-top: 5px;
+                color: $ColorBody;
+                font-size: $fs-p;
+            }
+            span{
+                color: $ColorSkyblue;
+            }
+        }
+        .message-item-user-dp{
+            height: 75px;
+            width: 75px;
+            border-radius: 50px;
+            background-size: cover;
+            background-position: top;
+        }
+        .message-item-user-dp.active {
+                position: relative;
+        }
+        .message-item-user-dp.active:after {
+            content: '';
+            background: $ColorSkyblue;
+            height: 17px;
+            width: 17px;
+            position: absolute;
+            right: 0;
+            border-radius: 50px;
+            border: 3px solid $ColorWhite;
+        }
+    }
+}
+
