@@ -294,6 +294,9 @@ input[type="radio"]:checked+.label.woman {
         border-radius: 50px;
         top: -10px;
     }
+    .ri-notification-line.active{
+        color: $ColorSkyblue;
+    }
 }
 
 // Footer CSS 
@@ -569,7 +572,7 @@ input[type="radio"]:checked+.label.woman {
         margin: 0 5px;
         color: $ColorWhite;
         font-weight: $fw-sbold;
-        font-size: $fs-h6;
+        font-size: 13px;
     }
     .activity-menu.active{
         border-bottom:3px solid $ColorWhite;

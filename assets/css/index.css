@@ -231,6 +231,9 @@ input:focus {
   border-radius: 50px;
   top: -10px;
 }
+.header-wrap .ri-notification-line.active {
+  color: #2EA4FC;
+}
 
 .footer-bg {
   height: 100px;
@@ -497,7 +500,7 @@ input:focus {
   margin: 0 5px;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 .activity-menu-wrap .activity-menu.active {
   border-bottom: 3px solid #fff;
