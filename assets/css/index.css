@@ -424,10 +424,34 @@ input:focus {
   height: 300px;
 }
 
-.tinder-suer-interaction {
+.tinder-user-interaction {
   padding-bottom: 30px;
 }
-.tinder-suer-interaction button {
+.tinder-user-interaction button {
   background: none;
   border: none;
+}
+
+.beeSeenHere-slider-wrap {
+  position: relative;
+}
+
+.beeSeenHere-slider-item {
+  border-radius: 30px;
+  height: 500px;
+  margin: 0 5px;
+}
+
+.beeSeenHere-slider-inner-item {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.beeSeenHere-slider-inner-item h3 {
+  color: #fff;
+}
+.beeSeenHere-slider-inner-item p {
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

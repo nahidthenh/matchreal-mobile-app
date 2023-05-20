@@ -498,10 +498,33 @@ input[type="radio"]:checked+.label.woman {
 	height: 300px;
 }
 
-.tinder-suer-interaction {
+.tinder-user-interaction {
     padding-bottom: 30px;
     button{
         background: none;
         border:none
+    }
+}
+
+// BeeSeenHere 
+.beeSeenHere-slider-wrap{
+    position: relative;
+}
+.beeSeenHere-slider-item {
+    border-radius: 30px;
+    height: 500px;
+    margin: 0 5px;
+}
+.beeSeenHere-slider-inner-item {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    h3{
+        color: $ColorWhite;
+    }
+    p{
+        color: $ColorWhite;
     }
 }
