@@ -564,4 +564,63 @@ input:focus {
   right: 0;
   border-radius: 50px;
   border: 3px solid #fff;
+}
+
+.dashboard-wrap .edit-profile {
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+.dashboard-wrap .edit-profile i {
+  background: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  line-height: 30px;
+  text-align: center;
+  color: #2EA4FC;
+}
+.dashboard-wrap .dashboard-user-dp {
+  height: 170px;
+  width: 170px;
+  background-position: top;
+  background-size: cover;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+.dashboard-wrap .dashboard-header {
+  background-size: cover;
+  background-position: top;
+  height: 350px;
+}
+.dashboard-wrap .dashboard-user-info h3 {
+  padding-top: 10px;
+  color: #fff;
+  padding-bottom: 5px;
+  z-index: 2;
+  position: relative;
+}
+.dashboard-wrap .dashboard-user-info p {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.dashboard-wrap .dashboard-header {
+  position: relative;
+}
+.dashboard-wrap .dashboard-header:after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to right, rgba(236, 3, 132, 0.72), rgba(251, 98, 105, 0.72));
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
