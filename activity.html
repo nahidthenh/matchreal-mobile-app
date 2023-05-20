@@ -100,7 +100,7 @@
                                                 style="background-image: url('assets/images/user/2.png');">
                                             </div>
                                             <div class="tinder--user-info">
-                                                <a href="user-profile.html">
+                                                <a href="user-dashboard.html">
                                                     <h3>Natasha Abigall</h3>
                                                 </a>
                                                 <p>Cape Town</p>
@@ -127,7 +127,7 @@
                                                 style="background-image: url('assets/images/user/1.png');">
                                             </div>
                                             <div class="tinder--user-info">
-                                                <a href="user-profile.html">
+                                                <a href="user-dashboard.html">
                                                     <h3>Afrin Hafza</h3>
                                                 </a>
                                                 <p>Cape Town</p>
@@ -154,7 +154,7 @@
                                                 style="background-image: url('assets/images/user/3.png');">
                                             </div>
                                             <div class="tinder--user-info">
-                                                <a href="user-profile.html">
+                                                <a href="user-dashboard.html">
                                                     <h3>Hasan Mahmud</h3>
                                                 </a>
                                                 <p>Cape Town</p>
@@ -181,7 +181,7 @@
                                                 style="background-image: url('assets/images/user/4.png');">
                                             </div>
                                             <div class="tinder--user-info">
-                                                <a href="user-profile.html">
+                                                <a href="user-dashboard.html">
                                                     <h3>Sakib Khan</h3>
                                                 </a>
                                                 <p>Dhaka</p>
@@ -249,7 +249,7 @@
                                 <i class="ri-send-plane-line"></i>
                             </div>
                         </a>
-                        <a href="profile.html">
+                        <a href="dashboard.html">
                             <div class="menu-item">
                                 <i class="ri-user-line"></i>
                             </div>
@@ -281,10 +281,12 @@
 
         $(document).ready(function () {
             $('.activity-menu-slider').slick({
-                slidesToScroll: 4,
-                slidesToShow: 4,
+                slidesToScroll: 1,
+                slidesToShow: 2,
                 infinite: false,
-                arrows: false
+                arrows: false,
+                centerMode: false,
+                variableWidth: true
             });
         });
     </script>
