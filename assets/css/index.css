@@ -275,7 +275,7 @@ input:focus {
 }
 
 .tinder {
-  height: 700px;
+  height: 614px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -462,7 +462,7 @@ input:focus {
 }
 
 .activity-slider-wrap {
-  height: 700px;
+  height: 520px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
