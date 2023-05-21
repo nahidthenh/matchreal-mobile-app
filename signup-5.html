@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+    <div class="auth-wrap">
+        <div class="auth-form container">
+            <form class="row">
+                <div>
+                    <h3 class="auth-title text-center py-5">
+                        What is it <br>
+                        you Desire!
+                    </h3>
+                </div>
+
+                <div class="set-introduction-wrap">
+
+
+                    <!-- age range slider  -->
+                    <div class="bg-white rounded-3 age-rangerSlider-wrap">
+                        <h3>Age Range (Y)</h3>
+                        <div age_range_slider="" id="slider-distance">
+                            <div>
+                                <div inverse-left="" style="width: 5%;"></div>
+                                <div inverse-right="" style="width: 50%;"></div>
+                                <div range="" style="left: 5%; right: 50%;"></div>
+                                <span thumb="" style="left: 5%;"></span>
+                                <span thumb="" style="left: 50%;"></span>
+                                <div sign="" style="left: 5%;">
+                                    <span id="value">5</span>
+                                </div>
+                                <div sign="" style="left: 50%;">
+                                    <span id="value">50</span>
+                                </div>
+                            </div>
+                            <input type="range" name="min_age" tabindex="0" value="0" max="100" min="0" step="1"
+                                id="ageMini" oninput="ageMiniCal()">
+
+                            <input type="range" name="max_age" tabindex="0" value="100" max="100" min="0" step="1"
+                                id="ageMax" oninput="ageMaxCal()">
+                        </div>
+                    </div>
+                    <!-- Height range slider (CM) -->
+                    <div class="bg-white rounded-3 age-rangerSlider-wrap mt-5">
+                        <h3>Height (cm)</h3>
+                        <div age_range_slider="" id="slider-distance">
+                            <div>
+                                <div inverse-left="" style="width: 5%;"></div>
+                                <div inverse-right="" style="width: 50%;"></div>
+                                <div range="" style="left: 5%; right: 50%;"></div>
+                                <span thumb="" style="left: 5%;"></span>
+                                <span thumb="" style="left: 50%;"></span>
+                                <div sign="" style="left: 5%;">
+                                    <span id="value">5</span>
+                                </div>
+                                <div sign="" style="left: 50%;">
+                                    <span id="value">50</span>
+                                </div>
+                            </div>
+                            <input type="range" name="min_age" tabindex="0" value="0" max="100" min="0" step="1"
+                                id="ageMini" oninput="ageMiniCal()">
+
+                            <input type="range" name="max_age" tabindex="0" value="100" max="100" min="0" step="1"
+                                id="ageMax" oninput="ageMaxCal()">
+                        </div>
+                    </div>
+                    <div class="search-innerItemDropdown-wrap w-100 m-0 my-3 mt-5">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Marital status</option>
+                            <option value="1">Married</option>
+                            <option value="2">Never Married</option>
+                        </select>
+                    </div>
+                    <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Religion</option>
+                            <option value="1">Married</option>
+                            <option value="2">Never Married</option>
+                        </select>
+                    </div>
+                    <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Language</option>
+                            <option value="1">Married</option>
+                            <option value="2">Never Married</option>
+                        </select>
+                    </div>
+                    <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Grew up in</option>
+                            <option value="1">Married</option>
+                            <option value="2">Never Married</option>
+                        </select>
+                    </div>
+                    <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Working as</option>
+                            <option value="1">Married</option>
+                            <option value="2">Never Married</option>
+                        </select>
+                    </div>
+
+
+                    <div class="widget-card p-3 mt-5">
+                        <h4 class="text-center">
+                            Education
+                        </h4>
+                        <div class="search-select-wrap">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Doctorate</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Master</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Honours</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Bachelors</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Degree</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="widget-card p-3">
+                        <h4 class="text-center">
+                            Education
+                        </h4>
+                        <div class="search-select-wrap">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Doctorate</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Master</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Honours</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Bachelors</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Degree</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-12 text-center mb-5">
+                    <a href="signup-5.html" class="auth-btn d-block text-center">Next</a>
+                    <!-- <button type="submit" class="auth-btn">Register</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- age range slider  -->
+    <script>
+        $(function () {
+            $("#ageMini").val(0);
+            $("#ageMax").val(100);
+            ageMiniCal();
+            ageMaxCal();
+
+            $(".selectMe2").each(function () {
+                $(this).select2({
+                    width: '100%',
+                    placeholder: $(this).data('place_holder')
+                });
+            });
+        });
+
+        function ageMiniCal() {
+            $this = document.getElementById("ageMini");
+
+            $this.value = Math.min($this.value, $this.parentNode.childNodes[5].value - 1);
+
+            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
+                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
+
+            var children = $this.parentNode.childNodes[1].childNodes;
+
+            children[1].style.width = value + '%';
+            children[5].style.left = value + '%';
+            children[7].style.left = value + '%';
+            children[11].style.left = value + '%';
+            children[11].childNodes[1].innerHTML = $this.value;
+        }
+
+        function ageMaxCal() {
+            $this = document.getElementById("ageMax");
+            $this.value = Math.max($this.value, $this.parentNode.childNodes[3].value - (-1));
+
+            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
+                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
+
+            var children = $this.parentNode.childNodes[1].childNodes;
+            children[3].style.width = (100 - value) + '%';
+            children[5].style.right = (100 - value) + '%';
+            children[9].style.left = value + '%';
+            children[13].style.left = value + '%';
+            children[13].childNodes[1].innerHTML = $this.value;
+        }
+    </script>
+</body>
+
+</html>
