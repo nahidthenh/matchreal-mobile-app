@@ -90,6 +90,10 @@ a {
   background-color: #EC4899;
 }
 
+.h-100vh {
+  height: 100vh !important;
+}
+
 input:focus {
   box-shadow: none !important;
 }
@@ -276,19 +280,19 @@ input:focus {
 }
 
 .card-bg-1 {
-  background-image: linear-gradient(to bottom right, #67D6F0, #549DF0);
+  background-image: linear-gradient(170deg, #67D6F0, #549DF0);
 }
 
 .card-bg-2 {
-  background-image: linear-gradient(to bottom right, #50A4FE, #EC4899);
+  background-image: linear-gradient(170deg, #50A4FE, #EC4899);
 }
 
 .card-bg-3 {
-  background-image: linear-gradient(to bottom right, #5CD6E9, #6713FA);
+  background-image: linear-gradient(170deg, #5CD6E9, #6713FA);
 }
 
 .card-bg-4 {
-  background-image: linear-gradient(to bottom right, #FEED50, #48ECDC);
+  background-image: linear-gradient(170deg, #FEED50, #48ECDC);
 }
 
 .tinder {

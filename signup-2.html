@@ -20,13 +20,28 @@
         <div class="preloader-circle"></div>
     </div>
     <div class="auth-wrap">
+        <h3 class="auth-title text-center py-5">
+            Register
+        </h3>
         <div class="auth-form container">
-            <form class="row g-3 px-3 d-flex justify-content-between flex-column h-100vh align-items-center">
-                <div>
-                    <h3 class="auth-title text-center pt-5">
-                        Register
-                    </h3>
+            <form class="row g-3 px-3">
+                <div class="col-12 position-relative">
+                    <input type="text" placeholder="Username" class="auth-input" id="">
+                    <img src="assets/images/icon/user.svg" width="23" height="23" alt="">
                 </div>
+                <div class="col-12 position-relative">
+                    <input type="email" placeholder="Email" class="auth-input" id="">
+                    <img src="assets/images/icon/email.svg" width="23" height="23" alt="">
+                </div>
+                <div class="col-12 position-relative">
+                    <input type="password" placeholder="Password" class="auth-input" id="">
+                    <img src="assets/images/icon/lock.svg" width="23" height="23" alt="">
+                </div>
+                <div class="col-12 position-relative">
+                    <input type="password" placeholder="Confirm Password" class="auth-input" id="">
+                    <img src="assets/images/icon/lock.svg" width="23" height="23" alt="">
+                </div>
+
                 <div class="col-12 d-flex align-items-center flex-column">
                     <!-- i'm  -->
                     <div class="mb-4 text-center">
@@ -74,8 +89,12 @@
                     </div>
 
                 </div>
+
                 <div class="col-12 text-center my-5">
-                    <button type="submit" class="auth-btn">Next</button>
+                    <button type="submit" class="auth-btn">Register</button>
+                </div>
+                <div class="col-12 text-center mb-5">
+                    <p>Already have an account ? <a href="login.html">Login</a></p>
                 </div>
             </form>
         </div>
