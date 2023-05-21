@@ -1221,5 +1221,14 @@ label {
         background: $ColorSkyblue;
         color: $ColorWhite;
     }
-    
+}
+
+// User Photo Manager 
+.user-photo-manager-wrap{
+    .user-single-photo{
+        height: 300px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+    }
 }
