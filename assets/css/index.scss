@@ -1086,3 +1086,33 @@ input[type="radio"]:checked+.label.woman {
         }
     }
 }
+
+// Edit profile page 
+.edit-profile-wrap{
+    .edit-profile-item {
+        background: white;
+        padding: 25px;
+        border-radius: 11px;
+        box-shadow: 0 3px 17px rgba(0, 0, 0, 17%);
+
+            ul {
+                padding-left: 20px;
+                li {
+                    padding-bottom: 20px;
+                    list-style: none;
+                    img {
+                        margin-right: 15px;
+                    }
+                    a {
+                        color: $ColorTitle;
+                        font-size: 18px;
+                        font-weight: $fw-medium;
+                    }
+                }
+                li:last-child {
+                    margin-bottom: -20px !important;
+                }
+            }
+ 
+    }
+}

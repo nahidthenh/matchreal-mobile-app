@@ -960,4 +960,29 @@ input:focus {
 }
 .user-card-wrap .user-single-card .uc-info .uc-btn button:first-child {
   background-color: #EC4899;
+}
+
+.edit-profile-wrap .edit-profile-item {
+  background: white;
+  padding: 25px;
+  border-radius: 11px;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.17);
+}
+.edit-profile-wrap .edit-profile-item ul {
+  padding-left: 20px;
+}
+.edit-profile-wrap .edit-profile-item ul li {
+  padding-bottom: 20px;
+  list-style: none;
+}
+.edit-profile-wrap .edit-profile-item ul li img {
+  margin-right: 15px;
+}
+.edit-profile-wrap .edit-profile-item ul li a {
+  color: #010101;
+  font-size: 18px;
+  font-weight: 500;
+}
+.edit-profile-wrap .edit-profile-item ul li:last-child {
+  margin-bottom: -20px !important;
 }/*# sourceMappingURL=index.css.map */
