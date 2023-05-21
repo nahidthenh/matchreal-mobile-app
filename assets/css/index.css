@@ -375,6 +375,17 @@ input:focus {
   font-size: 60px;
   box-shadow: 0 3px 51px #2EA4FC;
 }
+.auth-wrap .account-complete-wrap {
+  text-align: center;
+}
+.auth-wrap .account-complete-wrap h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 78px;
+  color: #FCC52E;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 .auth-wrap .heading {
   text-align: center;
   font-size: 0.8em;
