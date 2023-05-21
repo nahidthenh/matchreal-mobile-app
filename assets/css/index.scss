@@ -10,6 +10,7 @@ $ColorTitle:#010101;
 $ColorWhite: #fff;
 $ColorWhite2:#f3f3f3;
 $ColorWhite3:#EDF4F6;
+$ColorWhite4:#F1F1F1;
 $ColorPrimary: red;
 $ColorBody:#969598;
 $ColorIcon:#A8AEBA;
@@ -1200,4 +1201,25 @@ label {
         text-align: center;
         box-shadow: 0 3px 51px rgba(46, 164, 252, 0.52);
     }
+}
+
+// Search Page CSS 
+
+.search-wrap{
+    .search-header-wrap {
+        background: $ColorWhite4;
+        border-radius: 50px;
+    }
+    .search-menu {
+        background: $ColorWhite4;
+        border: 0;
+        padding: 15px;
+        border-radius: 50px;
+        width: 100%;
+    }
+    .search-menu.active {
+        background: $ColorSkyblue;
+        color: $ColorWhite;
+    }
+    
 }

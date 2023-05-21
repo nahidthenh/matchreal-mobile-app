@@ -1063,4 +1063,20 @@ label {
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 3px 51px rgba(46, 164, 252, 0.52);
+}
+
+.search-wrap .search-header-wrap {
+  background: #F1F1F1;
+  border-radius: 50px;
+}
+.search-wrap .search-menu {
+  background: #F1F1F1;
+  border: 0;
+  padding: 15px;
+  border-radius: 50px;
+  width: 100%;
+}
+.search-wrap .search-menu.active {
+  background: #2EA4FC;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
