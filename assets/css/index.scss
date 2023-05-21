@@ -1041,3 +1041,48 @@ input[type="radio"]:checked+.label.woman {
         }
     }
 }
+
+
+// Dashboard inner page 
+
+// my connection page 
+
+.user-card-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:8px;
+    .user-single-card {
+        box-shadow: 0 70px 85px rgb(0,0,0,5%);
+        text-align: center;
+        .uc-dp {
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .uc-info  {
+            h3{
+                font-size: $fs-h5;
+                font-weight: $fw-bold;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: $fs-p;
+                margin-bottom: 20px;
+            }
+            .uc-btn button {
+                background: $ColorSkyblue;
+                border: 0;
+                width: 60px;
+                border-radius: 50px;
+                font-size: 20px;
+                color: $ColorWhite;
+            }
+            .uc-btn button:first-child{
+                background-color: $ColorPink;
+            }
+        }
+    }
+}

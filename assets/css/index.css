@@ -922,4 +922,42 @@ input:focus {
   border-radius: 11px;
   padding: 13px;
   margin-top: 10px;
+}
+
+.user-card-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px;
+}
+.user-card-wrap .user-single-card {
+  box-shadow: 0 70px 85px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.user-card-wrap .user-single-card .uc-dp {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-size: cover;
+  margin: 0 auto;
+}
+.user-card-wrap .user-single-card .uc-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.user-card-wrap .user-single-card .uc-info p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.user-card-wrap .user-single-card .uc-info .uc-btn button {
+  background: #2EA4FC;
+  border: 0;
+  width: 60px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+.user-card-wrap .user-single-card .uc-info .uc-btn button:first-child {
+  background-color: #EC4899;
 }/*# sourceMappingURL=index.css.map */
