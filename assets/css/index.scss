@@ -103,6 +103,12 @@ a{
 
 
 // Landing Page 
+.landing-wrap {
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
 .landing-content{
     h1{
         font-family: $-ff-specialTitle;
@@ -1114,5 +1120,84 @@ input[type="radio"]:checked+.label.woman {
                 }
             }
  
+    }
+}
+
+// Edit Profile 2 
+
+.edit-profile-dp{
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $ColorWhite;
+        border: 0;
+        height: 90px;
+        width: 90px;
+        border-radius: 50px;
+        font-size: 60px;
+        box-shadow: 0 3px 51px $ColorSkyblue;
+    }
+}
+
+label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+}
+
+#fileInput {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.edit-profile-btn{
+    button {
+        background: $ColorSkyblue;
+        color: $ColorWhite;
+        border: 0;
+        margin-top: 20px;
+        width: 140px;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 0 auto;
+        margin-right: 10px;  
+        box-shadow: $shadow-1;
+    }
+}
+
+// Change password 
+
+.change-pws-wrap{
+ .auth-input {
+        background-color: #fff;
+        border: 0;
+        padding: 20px 50px;
+        border-radius: 100px;
+        width: 100%;
+        box-shadow: 0px 0px 76px rgba(0, 0, 0, 0.07);
+    }
+    img {
+        top: 19px;
+        position: absolute;
+        left: 25px;
+    }
+    button{
+        background: $ColorSkyblue;
+        color: $ColorWhite;
+        border: 0;
+        width: 60%;
+        padding: 15px;
+        border-radius: 100px;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 3px 51px rgba(46, 164, 252, 0.52);
     }
 }
