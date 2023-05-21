@@ -9,6 +9,7 @@ $ColorBlack: #000;
 $ColorTitle:#010101;
 $ColorWhite: #fff;
 $ColorWhite2:#f3f3f3;
+$ColorWhite3:#EDF4F6;
 $ColorPrimary: red;
 $ColorBody:#969598;
 $ColorIcon:#A8AEBA;
@@ -131,6 +132,239 @@ a{
 
 
 // Auth Login page 
+
+
+/* Range 2 Way Start */
+[age_range_slider] {
+    position: relative;
+    height: 14px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+[age_range_slider]>div {
+    position: absolute;
+    left: 13px;
+    right: 15px;
+    height: 14px;
+}
+
+[age_range_slider]>div>[inverse-left] {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-color: $ColorWhite3;
+}
+
+[age_range_slider]>div>[inverse-right] {
+    position: absolute;
+    right: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-color: $ColorWhite3;
+}
+
+[age_range_slider]>div>[range] {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    border-radius: 14px;
+    background-color: $ColorSkyblue !important;
+	margin-top: 3px;
+}
+
+[age_range_slider]>div>[thumb] {
+    position: absolute;
+    top: -7px;
+    z-index: 2;
+    height: 28px;
+    width: 28px;
+    text-align: left;
+    margin-left: -11px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    background-color: $ColorWhite;
+    border-radius: 50%;
+    outline: none;
+}
+
+[age_range_slider]>input[type=range] {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    height: 14px;
+    top: -2px;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+div[age_range_slider]>input[type=range]::-ms-track {
+
+    background: transparent;
+    color: transparent;
+}
+
+div[age_range_slider]>input[type=range]::-moz-range-track {
+    -moz-appearance: none;
+    background: transparent;
+    color: transparent;
+}
+
+div[age_range_slider]>input[type=range]:focus::-webkit-slider-runnable-track {
+    background: transparent;
+    border: transparent;
+}
+
+div[age_range_slider]>input[type=range]:focus {
+    outline: none;
+}
+
+div[age_range_slider]>input[type=range]::-ms-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+}
+
+div[age_range_slider]>input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+}
+
+div[age_range_slider]>input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    -webkit-appearance: none;
+}
+
+div[age_range_slider]>input[type=range]::-ms-fill-lower {
+    background: transparent;
+    border: 0 none;
+}
+
+div[age_range_slider]>input[type=range]::-ms-fill-upper {
+    background: transparent;
+    border: 0 none;
+}
+
+div[age_range_slider]>input[type=range]::-ms-tooltip {
+    display: none;
+}
+
+[age_range_slider] > div > [sign] {
+	opacity: 0;
+	position: absolute;
+	margin-left: -11px;
+	top: -9px;
+	z-index: 3;
+	background-color: #2EA4FC !important;
+	color: #fff;
+	width: 28px;
+	height: 38px;
+	border-radius: 28px;
+	line-height: 38px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+// [age_range_slider]>div>[sign]:after {
+//     position: absolute;
+//     content: '';
+//     left: 0;
+//     border-radius: 16px;
+//     top: 19px;
+//     border-left: 14px solid transparent;
+//     border-right: 14px solid transparent;
+//     border-top-width: 16px;
+//     border-top-style: solid;
+//     border-top-color: $ColorSkyblue !important;
+// }
+
+[age_range_slider]>div>[sign]>span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* [age_range_slider]:hover > div > [sign] { */
+[age_range_slider]>div>[sign] {
+    opacity: 1;
+}
+
+.age-rangerSlider-wrap h3 {
+    font-size: $fs-h4;
+    color: $ColorTitle;
+    font-weight: $fw-sbold;
+}
+
+
+/* Range 2 Way Stop */
+
+
+// Select Form 
+
+.search-innerItemDropdown-wrap select {
+	padding: 20px;
+	border-radius: 100px;
+	border: 0;
+	color: #969598;
+	font-size: 18px;
+	padding: 20px 30px;
+    box-shadow: 0 0 99px rgb(0, 0, 0, 10%);
+}
+.search-innerItemDropdown-wrap select:focus{
+    box-shadow: none !important;
+}
+.widget-card {
+	background-color: $ColorWhite3;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	padding: 5px;
+    margin-bottom: 20px;
+}
+.widget-card {
+    h4 {
+        font-size: $fs-h4;
+        font-weight: $fw-bold;
+        color: $ColorTitle;
+    }
+}
+.search-select-wrap {
+	margin-top: 30px;
+}
+
+.search-select-wrap div {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin-bottom: 10px;
+	// margin-right: 40px;
+}
+.search-select-wrap div input {
+	height: 22px;
+	width: 40px !important;
+}
+.search-select-wrap div label {
+	margin-left: -40px;
+}
+.form-switch input:checked ~ .form-check-label {
+	color: $ColorSkyblue;
+}
+
 .h-100vh{
     height: 100vh !important;
 }
@@ -140,6 +374,8 @@ input:focus{
 .auth-wrap{
     .auth-title{
         font-size: $fs-48;
+        font-weight: $fw-bold;
+        color: $ColorTitle;
     }
     .auth-input{
         background-color: #fff;

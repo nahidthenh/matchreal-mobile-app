@@ -90,6 +90,222 @@ a {
   background-color: #EC4899;
 }
 
+/* Range 2 Way Start */
+[age_range_slider] {
+  position: relative;
+  height: 14px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 20px 0 10px 0;
+}
+
+[age_range_slider] > div {
+  position: absolute;
+  left: 13px;
+  right: 15px;
+  height: 14px;
+}
+
+[age_range_slider] > div > [inverse-left] {
+  position: absolute;
+  left: 0;
+  height: 14px;
+  border-radius: 10px;
+  background-color: #EDF4F6;
+}
+
+[age_range_slider] > div > [inverse-right] {
+  position: absolute;
+  right: 0;
+  height: 14px;
+  border-radius: 10px;
+  background-color: #EDF4F6;
+}
+
+[age_range_slider] > div > [range] {
+  position: absolute;
+  left: 0;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #2EA4FC !important;
+  margin-top: 3px;
+}
+
+[age_range_slider] > div > [thumb] {
+  position: absolute;
+  top: -7px;
+  z-index: 2;
+  height: 28px;
+  width: 28px;
+  text-align: left;
+  margin-left: -11px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  border-radius: 50%;
+  outline: none;
+}
+
+[age_range_slider] > input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  height: 14px;
+  top: -2px;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+div[age_range_slider] > input[type=range]::-ms-track {
+  background: transparent;
+  color: transparent;
+}
+
+div[age_range_slider] > input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[age_range_slider] > input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+div[age_range_slider] > input[type=range]:focus {
+  outline: none;
+}
+
+div[age_range_slider] > input[type=range]::-ms-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+}
+
+div[age_range_slider] > input[type=range]::-moz-range-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+}
+
+div[age_range_slider] > input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  -webkit-appearance: none;
+}
+
+div[age_range_slider] > input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+div[age_range_slider] > input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+div[age_range_slider] > input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+[age_range_slider] > div > [sign] {
+  opacity: 0;
+  position: absolute;
+  margin-left: -11px;
+  top: -9px;
+  z-index: 3;
+  background-color: #2EA4FC !important;
+  color: #fff;
+  width: 28px;
+  height: 38px;
+  border-radius: 28px;
+  line-height: 38px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+[age_range_slider] > div > [sign] > span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* [age_range_slider]:hover > div > [sign] { */
+[age_range_slider] > div > [sign] {
+  opacity: 1;
+}
+
+.age-rangerSlider-wrap h3 {
+  font-size: 20px;
+  color: #010101;
+  font-weight: 600;
+}
+
+/* Range 2 Way Stop */
+.search-innerItemDropdown-wrap select {
+  padding: 20px;
+  border-radius: 100px;
+  border: 0;
+  color: #969598;
+  font-size: 18px;
+  padding: 20px 30px;
+  box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
+}
+
+.search-innerItemDropdown-wrap select:focus {
+  box-shadow: none !important;
+}
+
+.widget-card {
+  background-color: #EDF4F6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.widget-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #010101;
+}
+
+.search-select-wrap {
+  margin-top: 30px;
+}
+
+.search-select-wrap div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.search-select-wrap div input {
+  height: 22px;
+  width: 40px !important;
+}
+
+.search-select-wrap div label {
+  margin-left: -40px;
+}
+
+.form-switch input:checked ~ .form-check-label {
+  color: #2EA4FC;
+}
+
 .h-100vh {
   height: 100vh !important;
 }
@@ -105,6 +321,8 @@ input:focus {
 }
 .auth-wrap .auth-title {
   font-size: 48px;
+  font-weight: 700;
+  color: #010101;
 }
 .auth-wrap .auth-input {
   background-color: #fff;
