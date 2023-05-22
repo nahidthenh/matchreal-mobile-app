@@ -1565,7 +1565,10 @@ ul {
 
 // New mr Slider 
 .slider-full-height {
-    height: calc(100vh - 177px);
+    // -177 is perfect for emulator device
+    // height: calc(100vh - 177px);
+    // -240 is perfect for Real andriod device (POCO X3, Redme Note 8 , Vivo)
+    height: calc(100vh - 240px);
 }
 
 .mr-slider-wrap {
