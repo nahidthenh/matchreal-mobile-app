@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 $-ff-body: 'Inter', sans-serif;
 $-ff-specialTitle: 'Dancing Script', cursive;
+// #Import Style 
+@import url(./custome-animition-modal.css);
+
 // Color 
 $ColorMenu1:#EC018B;
 $ColorMenu2:#FC6667;
@@ -1282,4 +1285,61 @@ label {
     p{
         margin-bottom: 30px;
     }
+}
+
+
+// Referrls Page 
+.referrals-wrap {
+	margin-top: -15px !important;
+}
+.referls-dp {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: top;
+}
+
+.modal-box-header h3 {
+    font-weight: var(--mf-fw-bold);
+}
+
+.modal-box-main {
+    margin-bottom: 30px;
+}
+
+.modal-share-link p {
+    border-radius: 3em;
+    font-size: $fs-p;
+    font-weight: $fw-black;
+    margin: 1.5em 0;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.ift-copy-code {
+    border: 1px solid #222;
+    border-radius: 2em;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.685em;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1em;
+    margin-left: 1em;
+    padding: 1em 1em;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.gem-icon {
+    background-image: url('../images/coin.png');
+    height: 25px !important;
+    width: 35px !important;
+    display: block;
+    margin: 0 auto;
 }
