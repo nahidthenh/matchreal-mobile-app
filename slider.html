@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <style>
+        .ag-format-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            width: 100%;
+            position: relative;
+        }
+
+        .layout a {
+            color: #666;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide li {
+            list-style: none;
+        }
+
+        .slide.slick-initialized {
+            display: block;
+        }
+
+        .slick-dots {
+            margin-top: 5px;
+            margin-left: -5px;
+            margin-right: -5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+            max-height: 50px;
+            max-width: 50px;
+            margin: 5px;
+        }
+
+        .slick-dots li img {
+            height: auto;
+            width: 100%;
+
+            cursor: pointer;
+
+            opacity: 0.5;
+        }
+
+        .slick-dots li.slick-active img {
+            cursor: default;
+
+            opacity: 1;
+        }
+
+        .icon {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+        }
+
+        .icon__cnt {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img-slider {
+            background-position: top;
+            background-size: cover;
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+
+    <!-- Main Content Start  -->
+    <div class="main-content">
+        <div class="ag-format-container">
+            <div class="layout">
+                <ul class="slider">
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/1.png);"
+                            data-img="assets/images/user/1.png"></div>
+                    </li>
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/2.png); "
+                            data-img="assets/images/user/2.png"></div>
+                    </li>
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/3.png);"
+                            data-img="assets/images/user/3.png"></div>
+                    </li>
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/4.png);"
+                            data-img="assets/images/user/4.png"></div>
+                    </li>
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/5.png);"
+                            data-img="assets/images/user/5.png"></div>
+                    </li>
+                    <li>
+                        <div class="img-slider" style="background-image: url(assets/images/user/6.png);"
+                            data-img="assets/images/user/6.png"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Menu Start  -->
+    <div class="footer-bg">
+        <section class="footer-wrap rounded-pill p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="todays-match.html">
+                    <div class="menu-item">
+                        <i class="ri-calendar-todo-line"></i>
+                    </div>
+                </a>
+                <a href="my-match.html">
+                    <div class="menu-item">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                </a>
+                <a href="activity.html">
+                    <div class="menu-item">
+                        <i class="ri-pulse-line"></i>
+                    </div>
+                </a>
+                <a href="message.html">
+                    <div class="menu-item">
+                        <i class="ri-send-plane-line"></i>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="menu-item">
+                        <i class="ri-user-line"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Arrow Back -->
+    <script>
+        // const backButton = document.getElementById("back-button");
+
+        // backButton.addEventListener("click", function () {
+        //     history.back();
+        // });
+    </script>
+
+    <!-- User Slider  -->
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: false,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+            customPaging: function (slick, index) {
+                var targetImage = slick.$slides.eq(index).find('div').data('img');
+                return '<img src=" ' + targetImage + ' " />';
+            }
+        });
+    </script>
+</body>
+
+</html>
