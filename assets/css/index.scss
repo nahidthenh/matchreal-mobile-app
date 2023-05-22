@@ -21,6 +21,7 @@ $ColorBody:#969598;
 $ColorIcon:#A8AEBA;
 $ColorPink:#EC4899;
 $ColorSkyblue:#2EA4FC;
+$ColorGold:#F8AE00;
 // Font Width 
 $fw-light: 300;
 $fw-regular: 400;
@@ -679,9 +680,9 @@ input:focus {
 
 // Base 
 
-.main-content {
-    margin-bottom: 120px;
-}
+// .main-content {
+//     margin-bottom: 120px;
+// }
 
 
 // Main Slider / Tinder Slider Customization 
@@ -1559,3 +1560,99 @@ ul {
     z-index: 1;
     position: relative;
 }
+
+
+
+// New mr Slider 
+.slider-full-height {
+    height: calc(100vh - 177px);
+}
+
+.mr-slider-wrap {
+    .mr-slider-dp {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .mr-slider-dp::after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: #000;
+        left: 0;
+        top: 0;
+        border-radius: 16px;
+        opacity: .4;
+    }
+
+    .mr-more-btn {
+        background: 0;
+        border: 0;
+        color: $ColorWhite;
+        font-size: $fs-h2;
+        margin-right: 10px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mr-photo-privicy {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        color: $ColorWhite;
+
+        p {
+            color: $ColorWhite
+        }
+
+        i {
+            font-size: $fs-h1;
+        }
+
+        button {
+            background-color: $ColorGold;
+            border: 0;
+            color: $ColorWhite;
+            padding: 5px 17px;
+            border-radius: 50px;
+            font-size: $fs-p;
+            text-transform: capitalize;
+            margin-top: 15px;
+        }
+    }
+
+    .mr-user-info {
+        background-image: linear-gradient(to top, rgb(13, 12, 13, 100%), rgb(13, 12, 13, 0%));
+        border-radius: 0 0 16px 16px;
+        position: relative;
+        z-index: 1;
+
+        h4 {
+            color: $ColorWhite;
+            font-weight: bold;
+            font-size: $fs-h4;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: $ColorWhite;
+        }
+
+        .user-info-interact {
+
+            button {
+                background: none !important;
+                border: 0;
+            }
+        }
+    }
+}
+
+// New Mr Slider end 
