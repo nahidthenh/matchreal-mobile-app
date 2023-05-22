@@ -1,7 +1,9 @@
 // Font Family 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-$-ff-body: 'Inter', sans-serif;
-$-ff-specialTitle: 'Dancing Script', cursive;
+$-ff-body: 'Inter',
+sans-serif;
+$-ff-specialTitle: 'Dancing Script',
+cursive;
 // #Import Style 
 @import url(./custome-animition-modal.css);
 
@@ -39,39 +41,46 @@ $fs-h6: 14px;
 
 // box shadow 
 
-$shadow-1: 0 3px 51px rgb(46,164,252 ,52%);
-.shadow-2{
-    box-shadow: 0 0 76px rgb(0,0,0 ,7%);
+$shadow-1: 0 3px 51px rgb(46, 164, 252, 52%);
+
+.shadow-2 {
+    box-shadow: 0 0 76px rgb(0, 0, 0, 7%);
 }
-.shadow-3{
-    box-shadow: 0 3px 49px rgb(252,197,46 ,43%);
+
+.shadow-3 {
+    box-shadow: 0 3px 49px rgb(252, 197, 46, 43%);
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-p{
+p {
     margin: 0;
     color: $ColorBody;
     padding: 0;
     font-size: $fs-h5;
 }
 
-h1,h2,h3,h4,h5,h6{
-     margin: 0;
-     padding: 0;
-     color: $ColorTitle;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: $ColorTitle;
 }
 
-body{
+body {
     font-family: $-ff-body !important;
 }
 
-a{
+a {
     color: $ColorSkyblue;
     text-decoration: none !important;
 }
@@ -79,42 +88,48 @@ a{
 // Preloadder 
 
 #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $ColorWhite;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $ColorWhite;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .preloader-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 5px solid $ColorWhite2;
-  border-top: 5px solid $ColorSkyblue;
-  animation: spin 1s linear infinite;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid $ColorWhite2;
+    border-top: 5px solid $ColorSkyblue;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
 // Landing Page 
 .landing-wrap {
-	height: 100vh;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-.landing-content{
-    h1{
+
+.landing-content {
+    h1 {
         font-family: $-ff-specialTitle;
         text-align: center;
         font-size: $fs-h1;
@@ -122,6 +137,7 @@ a{
         color: $ColorPink;
         padding: 50px 0;
     }
+
     .theme-btn {
         background: $ColorSkyblue;
         color: $ColorWhite;
@@ -132,10 +148,11 @@ a{
         margin: 0 auto;
         margin-bottom: 15px;
         border-radius: 150px;
-        text-decoration: none ;
+        text-decoration: none;
         text-align: center;
     }
-    .bg-pink{
+
+    .bg-pink {
         background-color: $ColorPink;
     }
 }
@@ -182,7 +199,7 @@ a{
     height: 14px;
     border-radius: 14px;
     background-color: $ColorSkyblue !important;
-	margin-top: 3px;
+    margin-top: 3px;
 }
 
 [age_range_slider]>div>[thumb] {
@@ -274,21 +291,21 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
     display: none;
 }
 
-[age_range_slider] > div > [sign] {
-	opacity: 0;
-	position: absolute;
-	margin-left: -11px;
-	top: -9px;
-	z-index: 3;
-	background-color: #2EA4FC !important;
-	color: #fff;
-	width: 28px;
-	height: 38px;
-	border-radius: 28px;
-	line-height: 38px;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+[age_range_slider]>div>[sign] {
+    opacity: 0;
+    position: absolute;
+    margin-left: -11px;
+    top: -9px;
+    z-index: 3;
+    background-color: #2EA4FC !important;
+    color: #fff;
+    width: 28px;
+    height: 38px;
+    border-radius: 28px;
+    line-height: 38px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 // [age_range_slider]>div>[sign]:after {
@@ -328,15 +345,16 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 // Select Form 
 
 .search-innerItemDropdown-wrap select {
-	padding: 20px;
-	border-radius: 100px;
-	border: 0;
-	color: #969598;
-	font-size: 18px;
-	padding: 20px 30px;
+    padding: 20px;
+    border-radius: 100px;
+    border: 0;
+    color: #969598;
+    font-size: 18px;
+    padding: 20px 30px;
     box-shadow: 0 0 99px rgb(0, 0, 0, 10%);
 }
-.search-innerItemDropdown-wrap select:focus{
+
+.search-innerItemDropdown-wrap select:focus {
     box-shadow: none !important;
 }
 
@@ -345,12 +363,13 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 
 
 .widget-card {
-	background-color: $ColorWhite3;
-	border-radius: 8px;
-	margin-bottom: 20px;
-	padding: 5px;
+    background-color: $ColorWhite3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
     margin-bottom: 20px;
 }
+
 .widget-card {
     h4 {
         font-size: $fs-h4;
@@ -358,41 +377,48 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
         color: $ColorTitle;
     }
 }
+
 .search-select-wrap {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .search-select-wrap div {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row-reverse;
-	margin-bottom: 10px;
-	// margin-right: 40px;
-}
-.search-select-wrap div input {
-	height: 22px;
-	width: 40px !important;
-}
-.search-select-wrap div label {
-	margin-left: -40px;
-}
-.form-switch input:checked ~ .form-check-label {
-	color: $ColorSkyblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    // margin-right: 40px;
 }
 
-.h-100vh{
+.search-select-wrap div input {
+    height: 22px;
+    width: 40px !important;
+}
+
+.search-select-wrap div label {
+    margin-left: -40px;
+}
+
+.form-switch input:checked~.form-check-label {
+    color: $ColorSkyblue;
+}
+
+.h-100vh {
     height: 100vh !important;
 }
-input:focus{
+
+input:focus {
     box-shadow: none !important;
 }
-.auth-wrap{
-    .auth-title{
+
+.auth-wrap {
+    .auth-title {
         font-size: $fs-48;
         font-weight: $fw-bold;
         color: $ColorTitle;
     }
-    .auth-input{
+
+    .auth-input {
         background-color: #fff;
         border: 0;
         padding: 20px 50px;
@@ -400,10 +426,11 @@ input:focus{
         width: 100%;
         box-shadow: 0px 0px 76px rgba(0, 0, 0, 0.07);
     }
+
     .auth-form img {
-	    top: 19px;
-	    position: absolute;
-	    left: 25px;
+        top: 19px;
+        position: absolute;
+        left: 25px;
     }
 
     .auth-btn {
@@ -417,13 +444,14 @@ input:focus{
         text-align: center;
         box-shadow: $shadow-1;
     }
-    label { 
+
+    label {
         color: $ColorBody;
     }
 
     // Upload User dp 
 
-    .upload-dp-and-preview{
+    .upload-dp-and-preview {
         height: 345px;
         width: 345px;
         background-position: top;
@@ -433,6 +461,7 @@ input:focus{
         border-radius: 100%;
         margin-bottom: 60px;
         position: relative;
+
         button {
             position: absolute;
             top: 50%;
@@ -447,7 +476,7 @@ input:focus{
             box-shadow: 0 3px 51px $ColorSkyblue;
         }
     }
-    
+
     // .acc-complete {
     //     height: 500px;
     //     width: 100%;
@@ -459,8 +488,9 @@ input:focus{
     // }
 
     .account-complete-wrap {
-	    text-align: center;
-        h1{
+        text-align: center;
+
+        h1 {
             font-family: "Dancing Script", cursive;
             font-weight: bold;
             font-size: 78px;
@@ -470,107 +500,107 @@ input:focus{
         }
     }
 
-/* Select me  */
-/* Im man woman  */
-.heading {
-    text-align: center;
-    font-size: 0.8em;
-}
+    /* Select me  */
+    /* Im man woman  */
+    .heading {
+        text-align: center;
+        font-size: 0.8em;
+    }
 
-.center-align {
-    display: flex;
-    justify-content: start;
-    margin-left: -3px;
-    margin-top: 10px;
-}
+    .center-align {
+        display: flex;
+        justify-content: start;
+        margin-left: -3px;
+        margin-top: 10px;
+    }
 
-.center-align input[type="radio"] {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-}
+    .center-align input[type="radio"] {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
 
-.label {
-    vertical-align: middle;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgb(233, 9, 249, 30%);
-    color: $ColorWhite;
-    transition: all .3s ease-out;
-    font-size: 18px;
-    font-weight: $fw-medium;
-    border-radius: 8px;
-    border: 0;
-}
+    .label {
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        background-color: rgb(233, 9, 249, 30%);
+        color: $ColorWhite;
+        transition: all .3s ease-out;
+        font-size: 18px;
+        font-weight: $fw-medium;
+        border-radius: 8px;
+        border: 0;
+    }
 
-.label.man {
-    font-size: $fs-h6;
-    background-color: $ColorWhite !important;
-    border: 4px solid $ColorWhite;
-    padding: 10px;
-    background: #E1E6FF !important;
-    border-radius: 80px;
-    color: #17265C;
-}
+    .label.man {
+        font-size: $fs-h6;
+        background-color: $ColorWhite !important;
+        border: 4px solid $ColorWhite;
+        padding: 10px;
+        background: #E1E6FF !important;
+        border-radius: 80px;
+        color: #17265C;
+    }
 
-input[type="radio"]:checked+.label.man {
-    border: 4px solid $ColorSkyblue;
-    border-radius: 80px;
-    padding: 10px;
-    background: #E1E6FF !important;
-    color: #17265C;
-    font-size: $fs-h6;
-}
+    input[type="radio"]:checked+.label.man {
+        border: 4px solid $ColorSkyblue;
+        border-radius: 80px;
+        padding: 10px;
+        background: #E1E6FF !important;
+        color: #17265C;
+        font-size: $fs-h6;
+    }
 
-.label.woman {
-    background-color: $ColorWhite !important;
-    border: 4px solid $ColorWhite;
-    background: #FFE1F8 !important;
-    border-radius: 80px;
-    padding: 10px;
-    color: #17265C;
-    font-size: $fs-h6;
-}
+    .label.woman {
+        background-color: $ColorWhite !important;
+        border: 4px solid $ColorWhite;
+        background: #FFE1F8 !important;
+        border-radius: 80px;
+        padding: 10px;
+        color: #17265C;
+        font-size: $fs-h6;
+    }
 
-input[type="radio"]:checked+.label.woman {
-    font-size: $fs-h6;
-    border: 4px solid $ColorPink;
-    border-radius: 80px;
-    background: #FFE1F8 !important;
-    border-radius: 80px;
-    padding: 10px;
-}
+    input[type="radio"]:checked+.label.woman {
+        font-size: $fs-h6;
+        border: 4px solid $ColorPink;
+        border-radius: 80px;
+        background: #FFE1F8 !important;
+        border-radius: 80px;
+        padding: 10px;
+    }
 
 
-.auth-input input:focus {
-    box-shadow: none;
-}
+    .auth-input input:focus {
+        box-shadow: none;
+    }
 
-.label img {
-    position: relative;
-    margin: 5px 0;
-}
+    .label img {
+        position: relative;
+        margin: 5px 0;
+    }
 
-.blueBg {
-    position: relative;
-    display: block;
-}
+    .blueBg {
+        position: relative;
+        display: block;
+    }
 
-.blueBg img {
-    z-index: 1;
-	left: 0;
-	top: 0;
-}
+    .blueBg img {
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
 
-.im-title {
-    margin: 0 0 0 auto;
-    font-size: $fs-h5;
-    font-weight:$fw-medium;
-    color: $ColorTitle;
-    margin-right: 20px;
-}
+    .im-title {
+        margin: 0 0 0 auto;
+        font-size: $fs-h5;
+        font-weight: $fw-medium;
+        color: $ColorTitle;
+        margin-right: 20px;
+    }
 
-/* Select me end  */
+    /* Select me end  */
 
 
 
@@ -578,14 +608,16 @@ input[type="radio"]:checked+.label.woman {
 
 // Header CSS 
 
-.header-wrap{
-    a i{
+.header-wrap {
+    a i {
         color: $ColorIcon;
         font-size: 30px;
     }
+
     .notification-item {
         position: relative;
     }
+
     .notification-item:after {
         position: absolute;
         height: 10px;
@@ -596,7 +628,8 @@ input[type="radio"]:checked+.label.woman {
         border-radius: 50px;
         top: -10px;
     }
-    .ri-notification-line.active{
+
+    .ri-notification-line.active {
         color: $ColorSkyblue;
     }
 }
@@ -604,27 +637,28 @@ input[type="radio"]:checked+.label.woman {
 // Footer CSS 
 
 .footer-bg {
-	height: 100px;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: $ColorWhite;
     z-index: 999;
 
-    .footer-wrap{    
+    .footer-wrap {
         width: 93%;
-        background-image: linear-gradient(to right, $ColorMenu1 ,$ColorMenu2);
-     
+        background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2);
+
         a i {
             font-size: 20px;
             color: $ColorWhite;
         }
-        .menu-item{
+
+        .menu-item {
             background: transparent;
             height: 50px;
             width: 50px;
@@ -632,9 +666,11 @@ input[type="radio"]:checked+.label.woman {
             line-height: 50px;
             border-radius: 100px;
         }
-        .menu-item.active{
+
+        .menu-item.active {
             background-color: $ColorWhite !important;
-            i{
+
+            i {
                 color: $ColorSkyblue;
             }
         }
@@ -643,24 +679,28 @@ input[type="radio"]:checked+.label.woman {
 
 // Base 
 
-.main-content{
+.main-content {
     margin-bottom: 120px;
 }
 
 
 // Main Slider / Tinder Slider Customization 
-.card-bg-1{
-    background-image: linear-gradient(170deg, #67D6F0,#549DF0);
+.card-bg-1 {
+    background-image: linear-gradient(170deg, #67D6F0, #549DF0);
 }
-.card-bg-2{
-    background-image: linear-gradient(170deg, #50A4FE,#EC4899);
+
+.card-bg-2 {
+    background-image: linear-gradient(170deg, #50A4FE, #EC4899);
 }
-.card-bg-3{
-    background-image: linear-gradient(170deg, #5CD6E9,#6713FA);
+
+.card-bg-3 {
+    background-image: linear-gradient(170deg, #5CD6E9, #6713FA);
 }
-.card-bg-4{
-    background-image: linear-gradient(170deg, #FEED50,#48ECDC);
+
+.card-bg-4 {
+    background-image: linear-gradient(170deg, #FEED50, #48ECDC);
 }
+
 .tinder {
     // width: 100vw;
     height: 614px;
@@ -716,16 +756,16 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .tinder--card {
-	display: inline-block;
-	width: 100%;
-	max-width: 400px;
-	overflow: hidden;
-	position: absolute;
-	will-change: transform;
-	transition: all 0.3s ease-in-out;
-	cursor: grab;
-	border-radius: 40px;
-	padding: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    position: absolute;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+    cursor: grab;
+    border-radius: 40px;
+    padding: 10px;
 }
 
 .moving.tinder--card {
@@ -740,20 +780,23 @@ input[type="radio"]:checked+.label.woman {
     pointer-events: none;
 }
 
-.tinder--user-info{ 
+.tinder--user-info {
     // pointer-events: none;
     padding: 20px 0;
+
     h3 {
-        font-size: $fs-h3;    
+        font-size: $fs-h3;
         font-weight: $fw-bold;
         color: $ColorWhite;
     }
+
     p {
         pointer-events: none;
-	    font-size: $fs-h5;
+        font-size: $fs-h5;
         color: $ColorWhite;
     }
 }
+
 .tinder--buttons {
     flex: 0 0 100px;
     text-align: center;
@@ -788,24 +831,26 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .tinder--user-dp {
-	background-size: cover;
-	background-position: top;
-	height: 500px;
-	border-radius: 40px;
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    border-radius: 40px;
     pointer-events: none;
 }
 
 // My Matches Page 
 
 .spotlight-btn {
-    background-image: linear-gradient(to bottom,#FCC52E, #FFD765);
-	text-align: center;
-	border-radius: 50px;
-	padding: 10px;
-	margin-top: 15px;
-    p{
+    background-image: linear-gradient(to bottom, #FCC52E, #FFD765);
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 15px;
+
+    p {
         color: $ColorWhite;
-        span{
+
+        span {
             text-align: right;
             // animition
         }
@@ -813,48 +858,53 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .user-dp-v2 {
-	height: 300px;
+    height: 300px;
 }
 
 .tinder-user-interaction {
     pointer-events: none;
     padding-bottom: 30px;
-    button{
+
+    button {
         background: none;
-        border:none
+        border: none
     }
 }
 
 // BeeSeenHere 
-.beeSeenHere-slider-wrap{
+.beeSeenHere-slider-wrap {
     position: relative;
 }
+
 .beeSeenHere-slider-item {
     border-radius: 30px;
     height: 500px;
     margin: 0 5px;
 }
+
 .beeSeenHere-slider-inner-item {
     position: absolute;
     bottom: 30px;
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    h3{
+
+    h3 {
         color: $ColorWhite;
     }
-    p{
+
+    p {
         color: $ColorWhite;
     }
 }
 
-#back-button{    
+#back-button {
     background: none;
-    border: 0;    
+    border: 0;
 }
 
 // Activity page 
-.activity-slider-wrap{
+.activity-slider-wrap {
     height: 520px;
     overflow: hidden;
     display: flex;
@@ -863,15 +913,18 @@ input[type="radio"]:checked+.label.woman {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
 }
-.activity-menu-wrap{
-	background-image: linear-gradient(to right,$ColorMenu1,$ColorMenu2);
-	padding: 20px 0;
+
+.activity-menu-wrap {
+    background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2);
+    padding: 20px 0;
     text-align: center;
-    ul{
+
+    ul {
         margin: 0 !important;
     }
-    .activity-menu{
-        background:none;
+
+    .activity-menu {
+        background: none;
         border: 0;
         margin: 0 5px;
         color: $ColorWhite;
@@ -880,69 +933,82 @@ input[type="radio"]:checked+.label.woman {
         width: 130px;
         padding: 10px;
     }
-    @media screen and (width: 428px){
-         .activity-menu{
+
+    @media screen and (width: 428px) {
+        .activity-menu {
             width: 110px;
         }
     }
-    .activity-menu.active{
+
+    .activity-menu.active {
         // border-bottom:3px solid $ColorWhite;
         // background-color: rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         padding: 10px;
-        background-image: linear-gradient(to right,$ColorMenu1,$ColorMenu2);
+        background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2);
     }
 }
 
 // Message Page 
 
-.message-wrap{
+.message-wrap {
     position: relative;
-    input{
+
+    input {
         background-color: $ColorWhite2;
         width: 100%;
         border: 0;
         border-radius: 50px;
         padding: 16px 40px !important;
     }
-    input:focus{
+
+    input:focus {
         box-shadow: none;
-        background-color:$ColorWhite2;
+        background-color: $ColorWhite2;
     }
-    i{
+
+    i {
         position: absolute;
         top: 14px;
         left: 15px;
         font-size: $fs-h4;
         color: $ColorBody;
     }
-    .message-item-wrap{
+
+    .message-item-wrap {
         border-radius: 50px;
-        .single-message-item{
+
+        .single-message-item {
             margin: 20px 0;
-            h6{
+
+            h6 {
                 color: $ColorTitle;
                 font-weight: $fw-bold;
             }
-            p{
+
+            p {
                 margin-top: 5px;
                 color: $ColorBody;
                 font-size: $fs-p;
             }
-            span{
+
+            span {
                 color: $ColorSkyblue;
             }
         }
-        .message-item-user-dp{
+
+        .message-item-user-dp {
             height: 75px;
             width: 75px;
             border-radius: 50px;
             background-size: cover;
             background-position: top;
         }
+
         .message-item-user-dp.active {
-                position: relative;
+            position: relative;
         }
+
         .message-item-user-dp.active:after {
             content: '';
             background: $ColorSkyblue;
@@ -957,12 +1023,13 @@ input[type="radio"]:checked+.label.woman {
 }
 
 // Dashboard Page 
-.dashboard-wrap{
+.dashboard-wrap {
     .edit-profile {
         position: relative;
         z-index: 2;
         text-align: right;
-        i{
+
+        i {
             background: $ColorWhite;
             display: inline-block;
             margin-top: 10px;
@@ -975,6 +1042,7 @@ input[type="radio"]:checked+.label.woman {
             color: $ColorSkyblue;
         }
     }
+
     .dashboard-user-dp {
         height: 170px;
         width: 170px;
@@ -982,43 +1050,48 @@ input[type="radio"]:checked+.label.woman {
         background-size: cover;
         border-radius: 100px;
         border: 3px solid $ColorWhite;
-        margin: 0 auto;  
+        margin: 0 auto;
         z-index: 2;
         position: relative;
     }
-    .dashboard-header{
+
+    .dashboard-header {
         background-size: cover;
-        background-position:top;
+        background-position: top;
         height: 350px;
     }
+
     .dashboard-user-info {
-        h3{
+        h3 {
             padding-top: 10px;
-            color:$ColorWhite;
+            color: $ColorWhite;
             padding-bottom: 5px;
             z-index: 2;
             position: relative;
         }
-        p{
-            color: $ColorWhite;  
+
+        p {
+            color: $ColorWhite;
             z-index: 2;
             position: relative;
         }
     }
-        
+
     .dashboard-header {
         position: relative;
     }
+
     .dashboard-header:after {
         position: absolute;
         content: '';
-        background-image: linear-gradient(to right, rgb(236,3,132,72%) , rgb(251,98,105,72%));
+        background-image: linear-gradient(to right, rgb(236, 3, 132, 72%), rgb(251, 98, 105, 72%));
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 1;
     }
+
     .dashboard-widget {
         background: $ColorWhite;
         padding: 20px 0;
@@ -1026,33 +1099,40 @@ input[type="radio"]:checked+.label.woman {
         z-index: 3;
         position: relative;
         border-radius: 34px 34px 0 0;
-        .dashboard-inner-widget{
-            box-shadow:0 3px 17px rgb(0,0,0 ,7%) ;
+
+        .dashboard-inner-widget {
+            box-shadow: 0 3px 17px rgb(0, 0, 0, 7%);
             border-radius: 11px;
             margin-bottom: 10px;
-            ul{
+
+            ul {
                 margin: 0;
                 padding-left: 15px;
             }
-            ul li{
+
+            ul li {
                 list-style: none;
                 margin-bottom: 25px;
             }
-            ul li:last-child{
+
+            ul li:last-child {
                 margin-bottom: 0px !important;
             }
-            ul li a img{
+
+            ul li a img {
                 margin-right: 15px;
             }
+
             ul li a {
                 color: $ColorTitle;
                 font-size: $fs-h5;
                 font-weight: $fw-medium;
             }
         }
-        .log-out-btn-wrap{
-            button{
-                background:#FF2A2A;
+
+        .log-out-btn-wrap {
+            button {
+                background: #FF2A2A;
                 color: $ColorWhite;
                 width: 100%;
                 border: 0;
@@ -1069,13 +1149,15 @@ input[type="radio"]:checked+.label.woman {
 
 // my connection page 
 
-.user-card-wrap{
+.user-card-wrap {
     display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap:8px;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;
+
     .user-single-card {
-        box-shadow: 0 70px 85px rgb(0,0,0,5%);
+        box-shadow: 0 70px 85px rgb(0, 0, 0, 5%);
         text-align: center;
+
         .uc-dp {
             height: 100px;
             width: 100px;
@@ -1083,17 +1165,20 @@ input[type="radio"]:checked+.label.woman {
             background-size: cover;
             margin: 0 auto;
         }
-        .uc-info  {
-            h3{
+
+        .uc-info {
+            h3 {
                 font-size: $fs-h5;
                 font-weight: $fw-bold;
                 margin-top: 10px;
                 margin-bottom: 5px;
             }
-            p{
+
+            p {
                 font-size: $fs-p;
                 margin-bottom: 20px;
             }
+
             .uc-btn button {
                 background: $ColorSkyblue;
                 border: 0;
@@ -1102,7 +1187,8 @@ input[type="radio"]:checked+.label.woman {
                 font-size: 20px;
                 color: $ColorWhite;
             }
-            .uc-btn button:first-child{
+
+            .uc-btn button:first-child {
                 background-color: $ColorPink;
             }
         }
@@ -1110,44 +1196,49 @@ input[type="radio"]:checked+.label.woman {
 }
 
 // Edit profile page 
-.edit-profile-wrap{
+.edit-profile-wrap {
     .edit-profile-item {
         background: white;
         padding: 25px;
         border-radius: 11px;
         box-shadow: 0 3px 17px rgba(0, 0, 0, 17%);
 
-            ul {
-                padding-left: 20px;
-                li {
-                    padding-bottom: 20px;
-                    list-style: none;
-                    img {
-                        margin-right: 15px;
-                    }
-                    a {
-                        color: $ColorTitle;
-                        font-size: 18px;
-                        font-weight: $fw-medium;
-                    }
+        ul {
+            padding-left: 20px;
+
+            li {
+                padding-bottom: 20px;
+                list-style: none;
+
+                img {
+                    margin-right: 15px;
                 }
-                li:last-child {
-                    margin-bottom: -20px !important;
+
+                a {
+                    color: $ColorTitle;
+                    font-size: 18px;
+                    font-weight: $fw-medium;
                 }
             }
- 
+
+            li:last-child {
+                margin-bottom: -20px !important;
+            }
+        }
+
     }
 }
 
 // Edit Profile 2 
 
-.edit-profile-dp{
+.edit-profile-dp {
     height: 400px;
     width: 100%;
     border-radius: 5px;
     background-position: top;
     background-size: cover;
     position: relative;
+
     button {
         position: absolute;
         top: 50%;
@@ -1174,7 +1265,7 @@ label {
     z-index: -1;
 }
 
-.edit-profile-btn{
+.edit-profile-btn {
     button {
         background: $ColorSkyblue;
         color: $ColorWhite;
@@ -1184,15 +1275,15 @@ label {
         padding: 10px;
         border-radius: 50px;
         margin: 0 auto;
-        margin-right: 10px;  
+        margin-right: 10px;
         box-shadow: $shadow-1;
     }
 }
 
 // Change password 
 
-.change-pws-wrap{
- .auth-input {
+.change-pws-wrap {
+    .auth-input {
         background-color: #fff;
         border: 0;
         padding: 20px 50px;
@@ -1200,12 +1291,14 @@ label {
         width: 100%;
         box-shadow: 0px 0px 76px rgba(0, 0, 0, 0.07);
     }
+
     img {
         top: 19px;
         position: absolute;
         left: 25px;
     }
-    button{
+
+    button {
         background: $ColorSkyblue;
         color: $ColorWhite;
         border: 0;
@@ -1220,11 +1313,12 @@ label {
 
 // Search Page CSS 
 
-.search-wrap{
+.search-wrap {
     .search-header-wrap {
         background: $ColorWhite4;
         border-radius: 50px;
     }
+
     .search-menu {
         background: $ColorWhite4;
         border: 0;
@@ -1232,6 +1326,7 @@ label {
         border-radius: 50px;
         width: 100%;
     }
+
     .search-menu.active {
         background: $ColorSkyblue;
         color: $ColorWhite;
@@ -1239,11 +1334,12 @@ label {
 }
 
 // User Photo Manager 
-.user-photo-manager-wrap{
+.user-photo-manager-wrap {
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
-    .user-single-photo{
+
+    .user-single-photo {
         height: 170px;
         width: 100%;
         background-position: top;
@@ -1251,7 +1347,8 @@ label {
         border-radius: 5px;
         position: relative;
         background-color: $ColorWhite3;
-        button{
+
+        button {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -1266,7 +1363,8 @@ label {
         }
     }
 }
-.update-btn{
+
+.update-btn {
     background: #2EA4FC;
     color: #fff;
     border: 0;
@@ -1284,17 +1382,19 @@ label {
 .single-settings-widget {
     // background-color: $ColorWhite;
     margin-bottom: 50px;
-	text-align: center;
-	padding: 30px;
-	border-radius: 52px;
-	box-shadow: 0 70px 85px rgb(0,0,0,16%);
-    h4{
+    text-align: center;
+    padding: 30px;
+    border-radius: 52px;
+    box-shadow: 0 70px 85px rgb(0, 0, 0, 16%);
+
+    h4 {
         font-size: $fs-h4;
         font-weight: $fw-bold;
         color: $ColorTitle;
         margin: 15px 0;
     }
-    p{
+
+    p {
         margin-bottom: 30px;
     }
 }
@@ -1302,8 +1402,9 @@ label {
 
 // Referrls Page 
 .referrals-wrap {
-	margin-top: -15px !important;
+    margin-top: -15px !important;
 }
+
 .referls-dp {
     height: 120px;
     width: 120px;
@@ -1354,4 +1455,97 @@ label {
     width: 35px !important;
     display: block;
     margin: 0 auto;
+}
+
+
+// User Profile Page 
+
+// User Slider 
+.ag-format-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    width: 100%;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+        left: 15px;
+    }
+}
+
+.layout a {
+    color: #666;
+}
+
+.slide {
+    display: none;
+}
+
+.slide li {
+    list-style: none;
+}
+
+.slide.slick-initialized {
+    display: block;
+}
+
+.slick-dots {
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.slick-dots li {
+    display: inline-block;
+    max-height: 50px;
+    max-width: 50px;
+    margin: 5px;
+}
+
+.slick-dots li img {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.slick-dots li.slick-active img {
+    cursor: default;
+    opacity: 1;
+}
+
+.icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.icon__cnt {
+    height: 100%;
+    width: 100%;
+}
+
+.img-slider {
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
