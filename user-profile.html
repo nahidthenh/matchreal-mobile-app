@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+
+    <header class="header-wrap shadow-2 py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <button id="back-button">
+                        <img src="assets/images/icon/arrow-back.svg" alt="">
+                    </button>
+                </div>
+                <div class="d-flex">
+                    <div class="me-4">
+                        <a href="search.html">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="notification.html">
+                            <i class="ri-notification-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Start  -->
+    <div class="main-content">
+
+    </div>
+    <!-- Footer Menu Start  -->
+    <div class="footer-bg">
+        <section class="footer-wrap rounded-pill p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="todays-match.html">
+                    <div class="menu-item">
+                        <i class="ri-calendar-todo-line"></i>
+                    </div>
+                </a>
+                <a href="my-match.html">
+                    <div class="menu-item">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                </a>
+                <a href="activity.html">
+                    <div class="menu-item">
+                        <i class="ri-pulse-line"></i>
+                    </div>
+                </a>
+                <a href="message.html">
+                    <div class="menu-item">
+                        <i class="ri-send-plane-line"></i>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="menu-item">
+                        <i class="ri-user-line"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Arrow Back -->
+    <script>
+        const backButton = document.getElementById("back-button");
+
+        backButton.addEventListener("click", function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

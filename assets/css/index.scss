@@ -741,7 +741,7 @@ input[type="radio"]:checked+.label.woman {
 }
 
 .tinder--user-info{ 
-    pointer-events: none;
+    // pointer-events: none;
     padding: 20px 0;
     h3 {
         font-size: $fs-h3;    
@@ -749,6 +749,7 @@ input[type="radio"]:checked+.label.woman {
         color: $ColorWhite;
     }
     p {
+        pointer-events: none;
 	    font-size: $fs-h5;
         color: $ColorWhite;
     }
@@ -876,9 +877,20 @@ input[type="radio"]:checked+.label.woman {
         color: $ColorWhite;
         font-weight: $fw-sbold;
         font-size: 13px;
+        width: 130px;
+        padding: 10px;
+    }
+    @media screen and (width: 428px){
+         .activity-menu{
+            width: 110px;
+        }
     }
     .activity-menu.active{
-        border-bottom:3px solid $ColorWhite;
+        // border-bottom:3px solid $ColorWhite;
+        // background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        padding: 10px;
+        background-image: linear-gradient(to right,$ColorMenu1,$ColorMenu2);
     }
 }
 
