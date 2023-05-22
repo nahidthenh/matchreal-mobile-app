@@ -1119,4 +1119,21 @@ label {
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 3px 51px rgba(46, 164, 252, 0.52);
+}
+
+.single-settings-widget {
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 52px;
+  box-shadow: 0 70px 85px rgba(0, 0, 0, 0.16);
+}
+.single-settings-widget h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #010101;
+  margin: 15px 0;
+}
+.single-settings-widget p {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
