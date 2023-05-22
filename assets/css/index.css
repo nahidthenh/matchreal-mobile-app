@@ -541,6 +541,15 @@ input:focus {
   color: #2EA4FC;
 }
 
+.main-content {
+  margin-bottom: 120px;
+}
+
+.main-content.no-padding {
+  margin: 0;
+  padding: 0;
+}
+
 .card-bg-1 {
   background-image: linear-gradient(170deg, #67D6F0, #549DF0);
 }
