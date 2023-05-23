@@ -1352,7 +1352,62 @@ ul {
 }
 .user-profile-info-wrap .header .user-bio p {
   font-size: 14px;
-  color: #000;
+  padding: 10px 20px;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-header {
+  background-image: linear-gradient(to right, #EC018B, #FC6667);
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-header h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body {
+  background: #F6F9FA;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body h3 {
+  color: #010101;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body span {
+  margin-bottom: 10px;
+  display: block;
+  color: #969598;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body p {
+  font-size: 14px;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body .user-tag-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 0 !important;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .user-profile-inner-widget-body .user-tag-pills p {
+  font-size: 17px;
+  background: #FFEEEC;
+  color: #ED0789 !important;
+  border-radius: 50px;
+  padding: 10px 18px;
+  text-align: center;
+  margin: 6px;
+}
+.user-profile-info-wrap .user-profile-inner-widget-wrap .matches-btn {
+  background: #F8AE00;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  border-radius: 100px;
+  color: #fff;
+  box-shadow: 0 3px 51px rgb 252, 197, 46, 52%;
 }
 
 .circle-chart {
