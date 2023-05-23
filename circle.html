@@ -60,7 +60,7 @@
         <div class="user-profile-info-wrap">
             <div class="container">
                 <div class="header">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex">
                         <div>
                             <h3>Shaan Megh</h3>
                             <p>
@@ -70,8 +70,7 @@
                         </div>
                         <div>
                             <div class="single-skill">
-                                <div class="circlechart" data-percentage="60">
-                                </div>
+                                <div class="circlechart" data-percentage="52"></div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +117,6 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <script src="assets/js/circle.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- Arrow Back -->
     <script>
@@ -142,6 +140,28 @@
                 var targetImage = slick.$slides.eq(index).find('div').data('img');
                 return '<img src=" ' + targetImage + ' " />';
             }
+        });
+
+
+        $(document).ready(function () {
+            $('.circle-progress').each(function () {
+                var percentage = parseInt($(this).attr('data-percentage'));
+                var progressBar = $('<div class="progress-bar"></div>');
+
+                $(this).append(progressBar);
+                $(this).circleProgress({
+                    value: percentage / 100,
+                    size: 120,
+                    startAngle: -Math.PI / 2,
+                    thickness: 8,
+                    fill: {
+                        color: 'dodgerblue'
+                    },
+                    emptyFill: 'transparent'
+                });
+
+                $(this).find('.percentage').text(percentage + '%');
+            });
         });
     </script>
 </body>

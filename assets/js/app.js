@@ -14,3 +14,5 @@ showPreloader();
 
 // Hide preloader when the task completes
 setTimeout(hidePreloader, 1000); // Assuming the task takes 3 seconds
+
+
