@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+
+
+    <div class="matches-wrap">
+        <div class="matches-header">
+            <button id="back-button">
+                <img src="assets/images/icon/arrow-back.svg" alt="">
+            </button>
+        </div>
+        <div class="matches-body">
+            <h1>It's a Match!</h1>
+            <p>
+                You & <span>Elizabeth</span> have liked each other.
+            </p>
+            <div class="both-matches-dp mt-5">
+                <div class="matches-dp me-2" style="background-image: url('assets/images/user/2.png');"></div>
+                <div class="single-skill">
+                    <div class="circlechart" data-percentage="60">
+                    </div>
+                </div>
+                <div class="matches-dp ms-2" style="background-image: url('assets/images/user/4.png');"></div>
+            </div>
+            <div class="matches-btn">
+                <a href="message.html">Message Her</a>
+                <a href="todays-match.html">Keep Swiping</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <script src="assets/js/circle.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Arrow Back -->
+    <script>
+        const backButton = document.getElementById("back-button");
+
+        backButton.addEventListener("click", function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>
