@@ -1982,3 +1982,33 @@ ul {
         }
     }
 }
+
+
+// Modaal Style 
+
+.send-credit-btn {
+    background: $ColorSkyblue;
+    color: $ColorWhite;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: $fs-h5;
+    border: 0;
+}
+
+.send-cridit-form p {
+    margin-bottom: 30px;
+}
+
+.modalHeaderbg {
+    background-color: #4158D0 !important;
+    background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2) !important;
+    color: $ColorWhite
+}
+
+.gradient5 {
+    background-color: #21D4FD !important;
+    background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2) !important;
+    color: $ColorWhite
+}

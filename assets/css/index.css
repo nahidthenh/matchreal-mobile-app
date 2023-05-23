@@ -1651,4 +1651,31 @@ ul {
 .matches-wrap .matches-body .matches-btn :last-child {
   background-color: #13193A;
   box-shadow: none;
+}
+
+.send-credit-btn {
+  background: #2EA4FC;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border: 0;
+}
+
+.send-cridit-form p {
+  margin-bottom: 30px;
+}
+
+.modalHeaderbg {
+  background-color: #4158D0 !important;
+  background-image: linear-gradient(to right, #EC018B, #FC6667) !important;
+  color: #fff;
+}
+
+.gradient5 {
+  background-color: #21D4FD !important;
+  background-image: linear-gradient(to right, #EC018B, #FC6667) !important;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
