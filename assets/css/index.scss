@@ -124,8 +124,8 @@ a {
 
 // Landing Page 
 .landing-wrap {
-    // height: calc(100vh - 10vh);
-    height: 100vh;
+    height: calc(100vh - 10vh);
+    // height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
