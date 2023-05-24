@@ -729,6 +729,17 @@ input:focus {
   border: none;
 }
 
+.my-match-pages {
+  margin: 30px 0;
+}
+.my-match-pages .mr-slider-dp::after {
+  display: none !important;
+}
+
+.mr-slider-dp.match-card-blur.rounded-4 {
+  position: relative;
+}
+
 .beeSeenHere-slider-wrap {
   position: relative;
 }

@@ -11,7 +11,6 @@
     <!-- ==== css ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/tinderSlider.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
@@ -56,129 +55,217 @@
                 </a>
 
                 <!-- Main Content Start  -->
-                <div class="main-content mt-3">
-                    <!-- Main Slider  -->
-                    <div class="tinder">
-                        <div class="tinder--status">
-                            <i class="fa fa-remove"></i>
-                            <i class="fa fa-heart"></i>
-                        </div>
+                <div class="main-content">
+                    <div class="mr-slider-wrap my-match-pages slider-full-height rounded-4">
+                        <div class="mr-slider-dp rounded-4" style="background-image: url('assets/images/user/2.png');">
+                            <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="text-end">
+                                    <div class="dropdown">
+                                        <button class="mr-more-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-2-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
 
-                        <div class="tinder--cards">
-                            <div class="tinder--card card-bg-1">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/2.png');">
                                 </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="tinder--card card-bg-2">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/3.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="tinder--card card-bg-3">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/4.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <h3>Natasha Abigall</h3>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="tinder--card card-bg-4">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/5.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <a href="user-profile.html">
-                                        <h3>Abigall</h3>
-                                    </a>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
+                                <div class="mr-user-info">
+                                    <div class="ms-3 mb-2">
+                                        <a href="user-profile.html">
+                                            <h4>xshaanxs <b>-</b> <span id="">35</span> </h4>
+                                        </a>
+                                        <p>
+                                            <i class="ri-user-location-fill"></i>
+                                            Orlando, usa
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="user-info-interact d-flex justify-content-evenly align-items-center mb-2">
+                                        <div data-bs-toggle="modal" data-bs-target="#sendCreditModal">
+                                            <button><img src="assets/images/icon/slider/send-credit.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div>
+                                            <a href="message.html"><img src="assets/images/icon/slider/message.svg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div style="margin-top: 0.35rem !important;">
+                                            <button><img src="assets/images/icon/slider/love.svg" alt=""></button>
+                                        </div>
 
-                            <div class="tinder--card card-bg-4">
-                                <div class="tinder--user-dp user-dp-v2"
-                                    style="background-image: url('assets/images/user/1.png');">
-                                </div>
-                                <div class="tinder--user-info">
-                                    <a href="user-profile.html">
-                                        <h3>Abigall</h3>
-                                    </a>
-                                    <p>Cape Town</p>
-                                </div>
-                                <div class="tinder-user-interaction d-flex justify-content-evenly align-items-center">
-                                    <button>
-                                        <img src="assets/images/icon/gift.svg" alt="">
-                                    </button>
-                                    <a href="message-view.html">
-                                        <img src="assets/images/icon/message.svg" alt="">
-                                    </a>
-                                    <button>
-                                        <img src="assets/images/icon/dollor.svg" alt="">
-                                    </button>
+                                        <div data-bs-toggle="modal" data-bs-target="#largeModal">
+                                            <button><img src="assets/images/icon/slider/send-gift.svg" alt=""></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-
-                        <div class="tinder--buttons">
-                            <button id="nope"><i class="fa fa-remove"></i></button>
-                            <button id="love"><i class="fa fa-heart"></i></button>
                         </div>
                     </div>
-                    <!-- Main Slider End -->
+
+                    <div class="mr-slider-wrap slider-full-height rounded-4">
+                        <div class="mr-slider-dp match-card-blur rounded-4"
+                            style="background-image: url('assets/images/user/blur.png');">
+                            <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="text-end">
+                                    <div class="dropdown">
+                                        <button class="mr-more-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-2-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="mr-photo-privicy">
+                                        <i class="ri-eye-off-fill"></i>
+                                        <p>
+                                            This user chose to blur his <br> pictures
+                                        </p>
+                                        <button>
+                                            Unblur pictures
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mr-user-info">
+                                    <div class="ms-3 mb-2">
+                                        <a href="user-profile.html">
+                                            <h4>xshaanx <b>-</b> <span id="">35</span> </h4>
+                                        </a>
+                                        <p>
+                                            <i class="ri-user-location-fill"></i>
+                                            Orlando, usa
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="user-info-interact d-flex justify-content-evenly align-items-center mb-2">
+                                        <div data-bs-toggle="modal" data-bs-target="#sendCreditModal">
+                                            <button><img src="assets/images/icon/slider/send-credit.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div>
+                                            <a href="message.html"><img src="assets/images/icon/slider/message.svg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div style="margin-top: 0.35rem !important;">
+                                            <button><img src="assets/images/icon/slider/love.svg" alt=""></button>
+                                        </div>
+                                        <div data-bs-toggle="modal" data-bs-target="#largeModal">
+                                            <button><img src="assets/images/icon/slider/send-gift.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-slider-wrap my-match-pages bg-danger slider-full-height rounded-4">
+                        <div class="mr-slider-dp rounded-4" style="background-image: url('assets/images/user/1.png');">
+                            <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="text-end">
+                                    <div class="dropdown">
+                                        <button class="mr-more-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-2-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+
+                                </div>
+                                <div class="mr-user-info">
+                                    <div class="ms-3 mb-2">
+                                        <a href="user-profile.html">
+                                            <h4>xshaanxs <b>-</b> <span id="">35</span> </h4>
+                                        </a>
+                                        <p>
+                                            <i class="ri-user-location-fill"></i>
+                                            Orlando, usa
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="user-info-interact d-flex justify-content-evenly align-items-center mb-2">
+                                        <div data-bs-toggle="modal" data-bs-target="#sendCreditModal">
+                                            <button><img src="assets/images/icon/slider/send-credit.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div>
+                                            <a href="message.html"><img src="assets/images/icon/slider/message.svg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div style="margin-top: 0.35rem !important;">
+                                            <button><img src="assets/images/icon/slider/love.svg" alt=""></button>
+                                        </div>
+
+                                        <div data-bs-toggle="modal" data-bs-target="#largeModal">
+                                            <button><img src="assets/images/icon/slider/send-gift.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr-slider-wrap my-match-pages bg-danger slider-full-height rounded-4">
+                        <div class="mr-slider-dp rounded-4" style="background-image: url('assets/images/user/3.png');">
+                            <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="text-end">
+                                    <div class="dropdown">
+                                        <button class="mr-more-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-2-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+
+                                </div>
+                                <div class="mr-user-info">
+                                    <div class="ms-3 mb-2">
+                                        <a href="user-profile.html">
+                                            <h4>xshaanxs <b>-</b> <span id="">35</span> </h4>
+                                        </a>
+                                        <p>
+                                            <i class="ri-user-location-fill"></i>
+                                            Orlando, usa
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="user-info-interact d-flex justify-content-evenly align-items-center mb-2">
+                                        <div data-bs-toggle="modal" data-bs-target="#sendCreditModal">
+                                            <button><img src="assets/images/icon/slider/send-credit.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div>
+                                            <a href="message.html"><img src="assets/images/icon/slider/message.svg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div style="margin-top: 0.35rem !important;">
+                                            <button><img src="assets/images/icon/slider/love.svg" alt=""></button>
+                                        </div>
+
+                                        <div data-bs-toggle="modal" data-bs-target="#largeModal">
+                                            <button><img src="assets/images/icon/slider/send-gift.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Footer Menu Start  -->
                 <div class="footer-bg">
@@ -219,8 +306,6 @@
     <!-- ==== Script File ==== -->
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/hammer.min.js"></script>
-    <script src="assets/js/tinderSlider.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

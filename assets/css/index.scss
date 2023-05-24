@@ -884,6 +884,20 @@ input:focus {
     }
 }
 
+.my-match-pages {
+    margin: 30px 0;
+
+    .mr-slider-dp::after {
+        display: none !important;
+    }
+
+
+}
+
+.mr-slider-dp.match-card-blur.rounded-4 {
+    position: relative;
+}
+
 // BeeSeenHere 
 .beeSeenHere-slider-wrap {
     position: relative;
