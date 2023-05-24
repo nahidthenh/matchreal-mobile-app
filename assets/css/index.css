@@ -325,6 +325,7 @@ div[age_range_slider] > input[type=range]::-ms-tooltip {
 
 .h-100vh {
   height: 100vh !important;
+  height: 92vh !important;
 }
 
 input:focus {
