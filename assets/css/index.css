@@ -72,7 +72,7 @@ a {
   }
 }
 .landing-wrap {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -1511,7 +1511,7 @@ ul {
 }
 
 .slider-full-height {
-  height: calc(100vh - 240px);
+  height: calc(100vh - 177px);
 }
 
 .mr-slider-wrap .mr-slider-dp {
