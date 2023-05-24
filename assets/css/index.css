@@ -1684,4 +1684,8 @@ ul {
   background-color: #21D4FD !important;
   background-image: linear-gradient(to right, #EC018B, #FC6667) !important;
   color: #fff;
+}
+
+.padding-bottom {
+  padding-bottom: 250px;
 }/*# sourceMappingURL=index.css.map */
