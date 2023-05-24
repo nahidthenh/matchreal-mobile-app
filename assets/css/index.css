@@ -1517,6 +1517,7 @@ ul {
 
 .slider-full-height {
   height: calc(100vh - 240px);
+  height: calc(100vh - 260px);
 }
 
 .mr-slider-wrap .mr-slider-dp {
