@@ -72,10 +72,14 @@ a {
   }
 }
 .landing-wrap {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.landing-bg {
+  text-align: center;
 }
 
 .landing-content h1 {
