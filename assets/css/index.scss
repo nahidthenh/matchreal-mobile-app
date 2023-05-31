@@ -2276,4 +2276,22 @@ img.hover-shadow {
         width: 50px;
         height: auto;
     }
+
+    .msg-img-preview {
+        position: relative;
+
+        button {
+            position: absolute;
+            border: 0;
+            height: 20px;
+            width: 20px;
+            border-radius: 100px;
+            top: -10px;
+            right: -10px;
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+
+
 }
