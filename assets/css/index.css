@@ -1897,4 +1897,17 @@ img.hover-shadow {
 
 .message-header i {
   font-size: 20px;
+}
+
+.image-preview-wrap {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background: #dae2e3;
+  width: 100%;
+  padding: 20px;
+}
+.image-preview-wrap img {
+  width: 50px;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */

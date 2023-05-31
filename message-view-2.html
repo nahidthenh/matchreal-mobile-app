@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 m-0 p-0">
+                <div class="message-main-content">
+                    <div class="px-3 message-header bg-light py-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <button id="back-button">
+                                <img src="assets/images/icon/arrow-back.svg" alt="">
+                            </button>
+                        </div>
+                        <div>
+                            <h4>Alia Khatun </h4>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <i class="ri-more-2-fill" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">Delete</button>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-body px-3">
+
+
+                        <div class="they py-3">
+                            <div class="d-flex align-items-center">
+                                <div class="message-user-dp" style="background-image: url('assets/images/user/1.png');">
+                                </div>
+                                <p class="message-time ms-3">
+                                    8:26pm
+                                </p>
+                            </div>
+                            <p class="message-text mt-2">
+                                Hi Jimmy! Any update today?
+                            </p>
+                        </div>
+                        <div class="me d-flex flex-column align-items-end py-3">
+                            <div class="d-flex align-items-center">
+                                <p class="message-time me-3">
+                                    8:26pm
+                                </p>
+                                <div class="message-user-dp" style="background-image: url('assets/images/user/2.png');">
+                                </div>
+                            </div>
+                            <p class="message-text mt-2">
+                                lol ! No Update Today but working on Something you loved!
+                            </p>
+                            <p class="message-text mt-2">
+                                I am doing fine today! wbout u ?
+                            </p>
+                        </div>
+                        <div class="they py-3">
+                            <div class="d-flex align-items-center">
+                                <div class="message-user-dp" style="background-image: url('assets/images/user/1.png');">
+                                </div>
+                                <p class="message-time ms-3">
+                                    8:26pm
+                                </p>
+                            </div>
+                            <p class="message-text mt-2">
+                                <img src="assets/images/user/10.png" class="img-fluid" alt=""
+                                    onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </p>
+                        </div>
+
+                        <div class="chat-box border-top">
+                            <div class="image-preview-wrap">
+                                <button type="button" class="message-attachment-btn me-3">
+                                    <label for="fileInput">
+                                        <i class="ri-file-add-line"></i>
+                                    </label>
+                                    <input type="file" name="photo" id="fileInput">
+                                </button>
+                                <img src="assets/images/user/5.png" alt="">
+                            </div>
+                            <form class="d-flex justify-content-evenly align-items-center" action="">
+                                <button type="button" class="message-attachment-btn">
+                                    <label for="fileInput">
+                                        <i class="ri-attachment-2"></i>
+                                    </label>
+                                    <input type="file" name="photo" id="fileInput">
+                                </button>
+                                <textarea name="" class="form-control" id="" cols="27" rows="1"
+                                    placeholder="Type here . . ."></textarea>
+                                <button type="button" class="message-send-btn">
+                                    <i class="ri-send-plane-2-line"></i>
+                                </button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Delete Modal  -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body delete-conver-wrap text-center">
+                    <h3>Are you sure?</h3>
+                    <p class="my-3">
+                        You will not be able to recover this conversation!
+                    </p>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No, Cancle It !</button>
+                    <button type="button" class="btn btn-success">Yes, I'm Sure !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LightBox Modal  -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="assets/images/user/10.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="assets/images/user/1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="assets/images/user/2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="assets/images/user/3.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Ligthbox modal  -->
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <!-- Step Back  -->
+    <script>
+        const backButton = document.getElementById("back-button");
+
+        backButton.addEventListener("click", function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>
