@@ -1705,6 +1705,8 @@ ul {
   background-color: #E6EEF0;
   height: calc(100vh - 4rem);
   overflow: scroll;
+  position: relative;
+  padding-bottom: 70px;
 }
 .message-body .message-user-dp {
   height: 50px;
@@ -1725,6 +1727,60 @@ ul {
 .message-body .me .message-text {
   border-radius: 21px 0 10px 21px;
   text-align: end;
+}
+.message-body .chat-box {
+  position: fixed;
+  bottom: 0;
+  background: #E6EEF0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  right: 0;
+}
+.message-body .chat-box textarea {
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+  padding: 15px;
+}
+.message-body .chat-box textarea:focus {
+  box-shadow: none;
+}
+.message-body .chat-box .message-send-btn {
+  background: #2EA4FC;
+  color: #fff;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  right: 20px;
+  z-index: 9;
+  bottom: 22px;
+}
+.message-body .chat-box .message-attachment-btn {
+  background: #EC4899;
+  color: #fff;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  left: 20px;
+  z-index: 9;
+  bottom: 22px;
+}
+
+#fileInput {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .message-header i {
