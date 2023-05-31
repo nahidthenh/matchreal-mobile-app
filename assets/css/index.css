@@ -1706,7 +1706,7 @@ ul {
   height: calc(100vh - 4rem);
   overflow: scroll;
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 .message-body .message-user-dp {
   height: 50px;
@@ -1740,9 +1740,8 @@ ul {
   right: 0;
 }
 .message-body .chat-box textarea {
-  width: 100%;
+  width: 70%;
   margin: 15px 0;
-  position: relative;
   padding: 15px;
 }
 .message-body .chat-box textarea:focus {
@@ -1757,10 +1756,6 @@ ul {
   border-radius: 100px;
   text-align: center;
   line-height: 40px;
-  position: absolute;
-  right: 20px;
-  z-index: 9;
-  bottom: 22px;
 }
 .message-body .chat-box .message-attachment-btn {
   background: #EC4899;
@@ -1771,16 +1766,6 @@ ul {
   border-radius: 100px;
   text-align: center;
   line-height: 40px;
-  position: absolute;
-  left: 20px;
-  z-index: 9;
-  bottom: 22px;
-}
-
-#fileInput {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .message-header i {

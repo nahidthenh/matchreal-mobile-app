@@ -2047,7 +2047,7 @@ ul {
     height: calc(100vh - 4rem);
     overflow: scroll;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 72px;
 
     .message-user-dp {
         height: 50px;
@@ -2087,9 +2087,9 @@ ul {
         right: 0;
 
         textarea {
-            width: 100%;
+            width: 70%;
             margin: 15px 0;
-            position: relative;
+            // position: relative;
             padding: 15px;
 
             &:focus {
@@ -2107,10 +2107,10 @@ ul {
             border-radius: 100px;
             text-align: center;
             line-height: 40px;
-            position: absolute;
-            right: 20px;
-            z-index: 9;
-            bottom: 22px;
+            // position: absolute;
+            // right: 20px;
+            // z-index: 9;
+            // bottom: 22px;
         }
 
         .message-attachment-btn {
@@ -2122,19 +2122,14 @@ ul {
             border-radius: 100px;
             text-align: center;
             line-height: 40px;
-            position: absolute;
-            left: 20px;
-            z-index: 9;
-            bottom: 22px;
+            // position: absolute;
+            // left: 20px;
+            // z-index: 9;
+            // bottom: 22px;
         }
     }
 }
 
-#fileInput {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-}
 
 .message-header {
     i {
