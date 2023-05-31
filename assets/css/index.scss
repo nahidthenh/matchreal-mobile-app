@@ -2044,6 +2044,34 @@ ul {
 
 .message-body {
     background-color: $MessageBody;
+    height: calc(100vh - 4rem);
+    overflow: scroll;
+
+    .message-user-dp {
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .message-text {
+        background: $ColorWhite;
+        border-radius: 0 21px 21px 10px;
+        padding: 15px;
+        width: 85%;
+
+        img {
+            border-radius: 5px 20px 20px 20px;
+        }
+    }
+
+    .me {
+        .message-text {
+            border-radius: 21px 0 10px 21px;
+            text-align: end;
+        }
+    }
 }
 
 .message-header {
