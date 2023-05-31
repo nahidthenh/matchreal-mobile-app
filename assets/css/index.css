@@ -1699,4 +1699,12 @@ ul {
 
 .padding-bottom {
   padding-bottom: 250px;
+}
+
+.message-body {
+  background-color: #E6EEF0;
+}
+
+.message-header i {
+  font-size: 20px;
 }/*# sourceMappingURL=index.css.map */

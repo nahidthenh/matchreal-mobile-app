@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Matchreal Mobile App.</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- Preloader  -->
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 m-0 p-0">
+                <div class="main-content">
+                    <div class="px-3 message-header bg-light py-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <button id="back-button">
+                                <img src="assets/images/icon/arrow-back.svg" alt="">
+                            </button>
+                        </div>
+                        <div>
+                            <h4>Alia Khatun </h4>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <i class="ri-more-2-fill" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">Delete</button>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-body">
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Delete Modal  -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body delete-conver-wrap text-center">
+                    <h3>Are you sure?</h3>
+                    <p class="my-3">
+                        You will not be able to recover this conversation!
+                    </p>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No, Cancle It !</button>
+                    <button type="button" class="btn btn-success">Yes, I'm Sure !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        const backButton = document.getElementById("back-button");
+
+        backButton.addEventListener("click", function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

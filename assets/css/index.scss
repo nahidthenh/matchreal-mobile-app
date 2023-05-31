@@ -23,6 +23,7 @@ $ColorIcon:#A8AEBA;
 $ColorPink:#EC4899;
 $ColorSkyblue:#2EA4FC;
 $ColorGold:#F8AE00;
+$MessageBody:#E6EEF0;
 // Font Width 
 $fw-light: 300;
 $fw-regular: 400;
@@ -2036,4 +2037,17 @@ ul {
 
 .padding-bottom {
     padding-bottom: 250px;
+}
+
+
+// Message View Page 
+
+.message-body {
+    background-color: $MessageBody;
+}
+
+.message-header {
+    i {
+        font-size: 20px;
+    }
 }
