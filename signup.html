@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
-    <title>Matchreal Mobile App.</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+        <title>Matchreal Mobile App.</title>
 
-    <!-- ==== css ==== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-</head>
+        <!-- ==== css ==== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <style>
+            .steps {
+                display: none;
+            }
 
-<body>
-    <!-- Preloader  -->
-    <div id="preloader">
-        <div class="preloader-circle"></div>
-    </div>
-    <div class="auth-wrap">
-        <div class="auth-form container">
-            <form class="row g-3 px-3 d-flex justify-content-between flex-column h-100vh align-items-center">
-                <div>
-                    <h3 class="auth-title text-center pt-5">
-                        Register
-                    </h3>
-                </div>
-                <div class="col-12 d-flex align-items-center flex-column">
-                    <!-- i'm  -->
-                    <div class="mb-4 text-center">
-                        <label class="im-title" for="im">I'm</label>
-                        <div class="center-align">
-                            <input type="radio" name="size" id="size_1" value="small" checked="">
-                            <label class="label man" for="size_1">
-                                <span class="blueBg">
-                                    <img src="assets/images/icon/boy.svg" alt="" width="84" height="84">
-                                </span>
-                                Man
-                            </label>
+            fieldset {
+                margin-bottom: 30px;
+            }
 
-                            <input class="ms-2" type="radio" name="size" id="size_2" value="small">
-                            <label class="label woman" for="size_2">
-                                <span class="blueBg">
-                                    <img src="assets/images/icon/woman.svg" alt="" width="84" height="84">
-                                </span>
-                                Woman
-                            </label>
-                        </div>
-                    </div>
+            .wizard>.actions {
+                position: relative;
+                display: block;
+                text-align: center;
+                width: 100%
+            }
 
-                    <!-- Intersted  -->
+            .wizard.vertical>.actions {
+                display: inline;
+                text-align: center;
+                margin: 0 2.5%;
+                width: 95%
+            }
 
-                    <div class="text-center">
-                        <label class="im-title" for="im">Interested in</label>
-                        <div class="center-align">
-                            <input type="radio" name="size-2" id="size_3" value="small" checked="">
-                            <label class="label man" for="size_3">
-                                <span class="blueBg">
-                                    <img src="assets/images/icon/boy.svg" alt="" width="84" height="84">
-                                </span>
-                                Man
-                            </label>
+            .wizard>.actions>ul {
+                display: inline-block;
+                text-align: right;
+                list-style: none !important;
+                padding: 0;
+                margin: 0;
+            }
 
-                            <input class="ms-2" type="radio" name="size-2" id="size_4" value="small">
-                            <label class="label woman" for="size_4">
-                                <span class="blueBg">
-                                    <img src="assets/images/icon/woman.svg" alt="" width="84" height="84">
-                                </span>
-                                Woman
-                            </label>
-                        </div>
-                    </div>
+            .wizard>.actions>ul>li {
+                margin: 0 .5em;
+                float: left;
+            }
 
-                </div>
-                <div class="col-12 text-center mb-5">
-                    <a href="signup-2.html" class="auth-btn d-block text-center">Next</a>
-                    <!-- <button type="submit" class="auth-btn">Next</button> -->
-                </div>
-            </form>
+            .wizard.vertical>.actions>ul>li {
+                margin: 0 0 0 1em
+            }
+
+            .wizard>.actions a,
+            .wizard>.actions a:hover,
+            .wizard>.actions a:active {
+                background: #2184be;
+                color: #fff;
+                display: block;
+                padding: .5em 1em;
+                text-decoration: none;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px
+            }
+
+            .wizard>.actions .disabled a,
+            .wizard>.actions .disabled a:hover,
+            .wizard>.actions .disabled a:active {
+                background: #eee;
+                color: #aaa
+            }
+
+            @media(max-width: 600px) {
+
+                .wizard.vertical>.steps,
+                .wizard.vertical>.actions {
+                    display: block;
+                    float: none;
+                    width: 100%
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Preloader  -->
+        <div id="preloader">
+            <div class="preloader-circle"></div>
         </div>
-    </div>
+        <div class="auth-wrap">
+            <div class="auth-form container">
+                <form class="row g-3 px-3 d-flex justify-content-between flex-column h-100vh align-items-center">
+                    <div>
+                        <h3 class="auth-title text-center pt-5">
+                            Register
+                        </h3>
+                    </div>
+                    <div class="col-12 d-flex align-items-center flex-column wizard" id="step">
+                        <h6></h6>
+                        <fieldset>
+                            <!-- i'm  -->
+                            <div class="mb-4 text-center">
+                                <label class="im-title" for="im">I'm</label>
+                                <div class="center-align">
+                                    <input type="radio" name="size" id="size_1" value="small" checked="">
+                                    <label class="label man" for="size_1">
+                                        <span class="blueBg">
+                                            <img src="assets/images/icon/boy.svg" alt="" width="84" height="84">
+                                        </span>
+                                        Man
+                                    </label>
 
-    <!-- ==== Script File ==== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
+                                    <input class="ms-2" type="radio" name="size" id="size_2" value="small">
+                                    <label class="label woman" for="size_2">
+                                        <span class="blueBg">
+                                            <img src="assets/images/icon/woman.svg" alt="" width="84" height="84">
+                                        </span>
+                                        Woman
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <h6></h6>
+                        <fieldset>
+                            <!-- Intersted  -->
+                            <div class="text-center">
+                                <label class="im-title" for="im">Interested in</label>
+                                <div class="center-align">
+                                    <input type="radio" name="size-2" id="size_3" value="small" checked="">
+                                    <label class="label man" for="size_3">
+                                        <span class="blueBg">
+                                            <img src="assets/images/icon/boy.svg" alt="" width="84" height="84">
+                                        </span>
+                                        Man
+                                    </label>
+
+                                    <input class="ms-2" type="radio" name="size-2" id="size_4" value="small">
+                                    <label class="label woman" for="size_4">
+                                        <span class="blueBg">
+                                            <img src="assets/images/icon/woman.svg" alt="" width="84" height="84">
+                                        </span>
+                                        Woman
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                    <div class="col-12 text-center mb-5">
+                        <a href="signup-2.html" class="auth-btn d-block text-center">Next</a>
+                        <!-- <button type="submit" class="auth-btn">Next</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ==== Script File ==== -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#step").steps({
+                    headerTag: "h6",
+                    bodyTag: "fieldset",
+                    transitionEffect: "slideLeft",
+                    autoFocus: true,
+                    onFinished: function (event, currentIndex) {
+                        alert("Submitted!");
+                    }
+                });
+            });
+        </script>
+    </body>
 
 </html>
