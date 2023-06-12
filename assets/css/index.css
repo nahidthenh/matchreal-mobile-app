@@ -1924,4 +1924,83 @@ img.hover-shadow {
   right: -10px;
   text-align: center;
   line-height: 20px;
+}
+
+.credit-balance {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 15px 51px rgba(252, 197, 46, 0.52);
+}
+.credit-balance h1 {
+  color: #F8AE00;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.credit-package-wrap {
+  margin-top: 50px;
+}
+.credit-package-wrap .slick-list {
+  overflow: inherit !important;
+}
+.credit-package-wrap .slick-dots {
+  bottom: -40px;
+}
+.credit-package-wrap .slick-dots button {
+  background: #969598;
+  width: 40px;
+  height: 30px;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+}
+.credit-package-wrap .slick-active button {
+  background: #2EA4FC;
+}
+.credit-package-wrap .single-credit-package {
+  background: #2EA4FC;
+  text-align: center;
+  border-radius: 20px;
+  height: 350px;
+  position: relative;
+}
+.credit-package-wrap .header {
+  background-image: linear-gradient(to bottom, #EC018B, #FC6667);
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 100px;
+  position: absolute;
+  top: -35px;
+  left: 90px;
+  border: 10px solid #fff;
+}
+.credit-package-wrap .header p {
+  color: #fff;
+}
+.credit-package-wrap .body {
+  padding-top: 90px;
+}
+.credit-package-wrap .body h1 {
+  font-size: 30px;
+  color: #010101;
+  margin-bottom: 10px;
+}
+.credit-package-wrap .body h1 span {
+  font-size: 60px;
+}
+.credit-package-wrap .body p {
+  color: #010101;
+}
+.credit-package-wrap .body .package-select-btn {
+  border: 0;
+  background-image: linear-gradient(to right, #EC018B, #FC6667);
+  font-size: 16px;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 83px;
 }/*# sourceMappingURL=index.css.map */

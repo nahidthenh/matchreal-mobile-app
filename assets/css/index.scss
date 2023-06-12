@@ -2295,3 +2295,102 @@ img.hover-shadow {
 
 
 }
+
+
+// Buy Credit Page 
+
+.credit-balance {
+    background: $ColorWhite;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 51px rgb(252, 197, 46, 52%);
+
+    h1 {
+        color: $ColorGold;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.credit-package-wrap {
+    margin-top: 50px;
+
+    .slick-list {
+        overflow: inherit !important;
+    }
+
+    .slick-dots {
+        bottom: -40px;
+    }
+
+
+
+    .slick-dots button {
+        background: $ColorBody;
+        width: 40px;
+        height: 30px;
+        border: 0;
+        color: $ColorWhite;
+        border-radius: 3px;
+    }
+
+    .slick-active button {
+        background: $ColorSkyblue;
+
+    }
+
+    .single-credit-package {
+        background: #2EA4FC;
+        text-align: center;
+        border-radius: 20px;
+        // padding: 100px 0;
+        height: 350px;
+        position: relative;
+    }
+
+    .header {
+        background-image: linear-gradient(to bottom, $ColorMenu1, $ColorMenu2);
+        display: inline-block;
+        padding: 15px 35px;
+        border-radius: 100px;
+        position: absolute;
+        top: -35px;
+        left: 90px;
+        border: 10px solid $ColorWhite;
+
+        p {
+            color: $ColorWhite;
+        }
+    }
+
+    .body {
+        padding-top: 90px;
+
+        h1 {
+            font-size: 30px;
+            color: $ColorTitle;
+            margin-bottom: 10px;
+
+            span {
+                font-size: 60px;
+            }
+        }
+
+        p {
+            color: $ColorTitle;
+        }
+
+        .package-select-btn {
+            border: 0;
+            background-image: linear-gradient(to right, $ColorMenu1, $ColorMenu2);
+            font-size: 16px;
+            color: $ColorWhite;
+            width: 200px;
+            height: 50px;
+            border-radius: 100px;
+            position: absolute;
+            bottom: 20px;
+            left: 83px;
+        }
+    }
+}
