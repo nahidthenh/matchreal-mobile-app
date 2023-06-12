@@ -68,7 +68,8 @@
                                 <h1>$ <span>6.99</span></h1>
                                 <p>0.00 USD</p>
                                 <p>Save 0.00 USD</p>
-                                <button class="package-select-btn" type="button">Select</button>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="package-select-btn"
+                                    type="button">Select</button>
                             </div>
                         </div>
                         <div class="single-credit-package" style="background: rgb(235, 88, 115,33%);;">
@@ -79,7 +80,8 @@
                                 <h1>$ <span>9.99</span></h1>
                                 <p>0.00 USD</p>
                                 <p>Save 2.00 USD</p>
-                                <button class="package-select-btn" type="button">Select</button>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="package-select-btn"
+                                    type="button">Select</button>
                             </div>
                         </div>
                         <div class="single-credit-package" style="background: rgb(235, 88, 115,14%);">
@@ -90,7 +92,8 @@
                                 <h1>$ <span>19.99</span></h1>
                                 <p>0.00 USD</p>
                                 <p>Save 5.00 USD</p>
-                                <button class="package-select-btn" type="button">Select</button>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="package-select-btn"
+                                    type="button">Select</button>
                             </div>
                         </div>
                     </div>
@@ -132,6 +135,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- ==== Script File ==== -->
     <script src="assets/js/jquery-3.6.4.min.js"></script>
