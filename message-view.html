@@ -92,12 +92,27 @@
 
                         <div class="chat-box border-top">
 
+                            <div class="image-preview-wrap d-flex align-items-center d-none" id="file-preview-wrap">
+                                <button type="button" class="message-attachment-btn me-3">
+                                    <label for="file-input-preview">
+                                        <i class="ri-file-add-line"></i>
+                                    </label>
+                                    <input onchange="inputClick(event,this)" hidden id="file-input-preview" type="file" accept="image/*">
+                                </button>
+                                <div class="msg-img-preview">
+                                    <div class="img-single">
+                                        <img src="assets/images/user/10.png" alt="...">
+                                        <button><i class="ri-close-circle-fill"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
                             <form class="d-flex justify-content-evenly align-items-center" action="">
                                 <button type="button" class="message-attachment-btn">
-                                    <label for="fileInput">
+                                    <label for="file-input">
                                         <i class="ri-attachment-2"></i>
                                     </label>
-                                    <input type="file" name="photo" id="fileInput">
+                                    <input onchange="inputClick(event,this)" hidden id="file-input" type="file" accept="image/*">
                                 </button>
                                 <textarea name="" class="form-control" id="" cols="27" rows="1"
                                     placeholder="Type here . . ."></textarea>
@@ -211,6 +226,37 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+        function inputClick(e, input) {
+            var files      = e.target.files;
+            var done       = function(url,file) {
+                input.value = '';
+                $("#file-preview-wrap").removeClass('d-none');
+                let html = `
+                <div class="img-single">
+                    <img src="`+url+`" alt="`+file.name+`">
+                    <button onclick="removePreview(this)"><i class="ri-close-circle-fill"></i></button>
+                </div>`;
+                $(".msg-img-preview").append(html);
+                // console.log(url,file);
+            };
+            var reader;
+            var file;
+            var url;
+            if (files && files.length > 0) {
+                file = files[0];
+                if (URL) {
+                    done(URL.createObjectURL(file), file);
+                } else if (FileReader) {
+                    reader = new FileReader();
+                    reader.onload = function(e) {
+                        done(reader.result, file);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
         }
     </script>
     <!-- Step Back  -->
